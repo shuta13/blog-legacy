@@ -4,7 +4,7 @@
       .title {{ title }}
       .post-meta 
         time {{ params.date }}
-      div(v-html="bodyHtml")
+      .body(v-html="bodyHtml")
 </template>
 
 <script lang="ts">
@@ -45,5 +45,8 @@ export default class extends Vue {
   margin-top: -1rem;
   margin-bottom: 2.4rem;
   text-align: right;
+}
+.body {
+  line-height: 2rem;
 }
 </style>

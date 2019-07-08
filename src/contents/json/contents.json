@@ -1,7 +1,7 @@
 {
   "fileMap": {
     "src/contents/json/2019-07-09-test.json": {
-      "title": "記事のタイトル",
+      "title": "プロメアを見てきた",
       "created_at": "2019-07-09T00:00:00.000Z",
       "dir": "src/contents/json",
       "base": "2019-07-09-test.json",

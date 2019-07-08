@@ -8,7 +8,7 @@ const config: NuxtConfiguration = {
   optimizedImages: {
     optimizedImages: true
   },
-  css: ['minireset.css'],
+  // css: ['minireset.css'], // mdの変換がうまくいかないため
   manifest: {
     lang: 'ja',
     name: 'did0es.blog.me',

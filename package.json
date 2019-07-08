@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "@nuxt/typescript": "2.8.1",
-    "@nuxtjs/eslint-config": "0.0.1",
+    "@nuxtjs/eslint-config": "1.0.1",
     "@nuxtjs/eslint-module": "0.0.1",
     "babel-eslint": "10.0.2",
     "eslint": "5.16.0",

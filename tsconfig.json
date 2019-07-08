@@ -17,13 +17,14 @@
     "noEmit": true,
     "baseUrl": ".",
     "paths": {
-      "~/*": [
-        "./*"
-      ],
-      "@/*": [
-        "./*"
-      ]
+      "~/*": ["./src/*"],
+      "~~/*": ["./*"],
+      "@/*": ["./src/*"],
+      "@@/*": ["./*"]
     },
+    "esModuleInterop": true,
+		"resolveJsonModule": true,
+		"experimentalDecorators": true,
     "types": [
       "@types/node",
       "@nuxt/vue-app"

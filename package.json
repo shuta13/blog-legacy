@@ -10,7 +10,8 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "md": "processmd src/contents/*.md --stdout --markdownOptions.html=true --outputDir src/contents/json > src/contents/json/contents.json"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
@@ -35,6 +36,7 @@
     "minireset.css": "^0.0.5",
     "node-sass": "^4.12.0",
     "nodemon": "^1.18.9",
+    "processmd": "^4.4.2",
     "pug": "^2.0.4",
     "pug-plain-loader": "^1.0.0",
     "sass-loader": "^7.1.0"

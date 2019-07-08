@@ -1,6 +1,10 @@
+import path from 'path'
 import NuxtConfiguration from '@nuxt/config'
+import contents from './src/contents/json/contents.json'
+
 const config: NuxtConfiguration = {
   mode: 'universal',
+  srcDir: 'src/',
   optimizedImages: {
     optimizedImages: true
   },
@@ -23,7 +27,15 @@ const config: NuxtConfiguration = {
     cache: true
   },
   generate: {
-    fallback: true
+    fallback: true,
+    routes() {
+			return Object.values(contents.fileMap)
+				.map(params => {
+					const { base, ext } = params
+					return `posts/${path.basename(base, ext)}`
+				})
+				.flat()
+		}
   }
 }
 export default config

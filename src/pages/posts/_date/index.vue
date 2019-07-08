@@ -34,7 +34,7 @@ export default class extends Vue {
   justify-content: center;
 }
 .contents-wrap {
-  width: 60vw;
+  width: 50vw;
 }
 .title {
   font-size: 2rem;

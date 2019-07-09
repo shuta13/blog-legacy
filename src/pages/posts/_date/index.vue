@@ -1,8 +1,10 @@
 <template lang="pug">
   .container
     transition(name="fire1")
+      //- 平めの方
       fire-object01.fire-object(v-if="!fire")
     transition(name="fire2")
+      //- 出っ張ってる方
       fire-object02.fire-object(v-if="fire")
     .contents-wrap
       .title {{ title }}
@@ -26,9 +28,9 @@ import FireObject02 from '~/components/FireObject02.vue'
 export default class extends Vue {
   title = ''
   fire = true
-  scrollY = 0
   width = 0
   height = 0
+  scrollY = 0
   asyncData({ params }) {
     return Object.assign({}, require(`~/contents/json/${params.date}.json`), { params });
   }

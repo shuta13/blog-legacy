@@ -14,6 +14,10 @@
     "md": "processmd src/contents/*.md --stdout --markdownOptions.html=true --outputDir src/contents/json > src/contents/json/contents.json"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.19",
+    "@fortawesome/free-brands-svg-icons": "^5.9.0",
+    "@fortawesome/free-solid-svg-icons": "^5.9.0",
+    "@fortawesome/vue-fontawesome": "^0.1.6",
     "@nuxtjs/axios": "5.5.4",
     "gsap": "2.1.3",
     "nuxt": "2.8.1",

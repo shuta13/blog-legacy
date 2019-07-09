@@ -23,7 +23,7 @@ export default class extends Vue {
       title: 'home'
     }
     meta: [
-      { hid: 'og:image', property: 'og:image', content: 'https://did0es-blog.netlify.com/thumbnails/2019-07-09-promare-movie.jpg' }
+      { hid: 'og:image', property: 'og:image', content: 'https://did0es-blog.netlify.com/posts/2019-07-09-promare-movie.jpg' }
     ]
   }
   title20190709PromareMovie = JSON20190709PromareMovie.title

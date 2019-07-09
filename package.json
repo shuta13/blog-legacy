@@ -15,14 +15,19 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "5.5.4",
+    "gsap": "^2.1.3",
     "nuxt": "2.8.1",
     "nuxt-property-decorator": "2.3.0",
+    "three": "^0.106.2",
     "ts-node": "8.3.0"
   },
   "devDependencies": {
     "@nuxt/typescript": "2.8.1",
     "@nuxtjs/eslint-config": "0.0.1",
     "@nuxtjs/eslint-module": "0.0.1",
+    "@types/gsap": "^1.20.2",
+    "@types/node": "^12.6.1",
+    "@types/three": "^0.103.2",
     "babel-eslint": "10.0.2",
     "eslint": "5.16.0",
     "eslint-config-standard": "12.0.0",
@@ -33,7 +38,6 @@
     "eslint-plugin-promise": "4.2.1",
     "eslint-plugin-standard": "4.0.0",
     "eslint-plugin-vue": "5.2.3",
-    "minireset.css": "0.0.5",
     "node-sass": "4.12.0",
     "nodemon": "1.19.1",
     "processmd": "4.4.2",

@@ -66,10 +66,7 @@ export default {
 				this.mesh.position.z = Math.random()
         this.mesh.rotation.x = Math.random() * 20 * Math.PI
         // 後半
-        // this.mesh.rotation.y = Math.random() * 0.001 * Math.PI
-        if (this.scrollY) {
-          this.mesh.rotation.y = Math.random() * 2 * Math.PI
-        }
+        this.mesh.rotation.y = Math.random() * 2 * Math.PI
         group.add(this.mesh)
       }
       this.object.add(group)
@@ -98,7 +95,7 @@ export default {
       this.renderer.render(this.scene, this.camera)
       this.camera.updateProjectionMatrix()
       this.object.rotation.x -= (this.mouseY - this.object.rotation.y) * 0.0000006
-      this.object.rotation.x -= (this.mouseX - this.object.rotation.x) * 0.00000006
+      this.object.rotation.x -= (this.mouseX - this.object.rotation.x) * 0.0000001
       this.renderer.setSize(this.width, this.height)
       this.scrollY = window.scrollY
     }

@@ -1,15 +1,15 @@
 <template lang="pug">
   .container
-    fire-shader
+    fire-object01
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
-import FireShader from '~/components/FireShader.vue'
+import FireObject01 from '~/components/FireObject01.vue'
 
 @Component({
   components: {
-    FireShader
+    FireObject01
   }
 })
 export default class extends Vue {

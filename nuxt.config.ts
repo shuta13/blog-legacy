@@ -38,14 +38,14 @@ const config: NuxtConfiguration = {
   },
   generate: {
     fallback: true,
-    routes() {
-			return Object.values(contents.fileMap)
-				.map(params => {
-					const { base, ext } = params
-					return `posts/${path.basename(base, ext)}`
-				})
-				.flat()
-		}
+    // routes() {
+		// 	return Object.values(contents.fileMap)
+		// 		.map(params => {
+		// 			const { base, ext } = params
+		// 			return `posts/${path.basename(base, ext)}`
+		// 		})
+		// 		.flat()
+		// }
   }
 }
 export default config

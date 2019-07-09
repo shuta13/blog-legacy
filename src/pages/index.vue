@@ -22,6 +22,9 @@ export default class extends Vue {
     return {
       title: 'home'
     }
+    meta: [
+      { hid: 'og:image', property: 'og:image', content: 'https://did0es-blog.netlify.com/2019-07-09-promare-movie.jpg' }
+    ]
   }
   title20190709PromareMovie = JSON20190709PromareMovie.title
   tags20190709PromareMovie = JSON20190709PromareMovie.tags
@@ -70,27 +73,44 @@ a {
 }
 .top-bar {
   font-family: 'Chakra Petch';
+  @media screen and (max-width: 1000px) {
+    font-size: 12vw;
+  }
   font-size: 2.4rem;
 }
 .link-wrap {
   background-color: rgb(255, 240, 240);
+  @media screen and (max-width: 1000px) {
+    width: 80vw;
+    height: 20vh;
+    border-radius: 20px;
+  }
   width: 20vw;
   margin-top: 10vh;
   border-radius: 3px;
 }
 .title {
+  @media screen and (max-width: 1000px) {
+    font-size: 6vw;
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
   font-size: 1rem;
   margin: 0.4rem 0.4rem;
 }
 .date {
   text-align: right;
+  @media screen and (max-width: 1000px) {
+    font-size: 3vw;
+  }
   font-size: 0.8rem;
-}
-.tag-title {
-  font-size: 1rem;
 }
 .tags, .category {
   text-align: left;
+  @media screen and (max-width: 1000px) {
+    font-size: 3vw;
+    margin-left: 2vw;
+  }
   font-size: 0.8rem
 }
 </style>

@@ -9,16 +9,20 @@
           .date 2019-07-09
           .tags(v-for="tag in tags_20190709PromareMovie") - {{ tag }}
           .category - category : {{ category_20190709PromareMovie }}
-    .blind-small-screen
-      .notion ERROR:大きなサイズの画面にてご覧ください。
+    app-blinder
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
 import TweenMax from 'gsap'
+import AppBlinder from '~/components/AppBlinder.vue'
 import _20190709PromareMovie from '../contents/json/2019-07-09-promare-movie.json'
 
-@Component
+@Component({
+  components: {
+    AppBlinder
+  }
+})
 export default class extends Vue {
   head() {
     return {
@@ -136,22 +140,5 @@ a {
     font-size: 2vw;
   }
   font-size: 0.8rem
-}
-.blind-small-screen {
-  @media screen and (min-width: 300px) {
-    display: none;
-  }
-  background-color: #000;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  z-index: 999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.notion {
-  color: #fff;
-  font-size: 0.1rem;
 }
 </style>

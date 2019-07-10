@@ -11,16 +11,19 @@
       .post-meta
         time {{ params.date }}
       .body(v-html="bodyHtml")
+    app-blinder
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
 import { TweenMax, Power4 } from 'gsap'
+import AppBlinder from '~/components/AppBlinder.vue'
 import FireObject01 from '~/components/FireObject01.vue'
 import FireObject02 from '~/components/FireObject02.vue'
 
 @Component({
   components: {
+    AppBlinder,
     FireObject01,
     FireObject02
   }
@@ -47,10 +50,10 @@ export default class extends Vue {
   }
   handleScroll() {
     this.scrollY = window.scrollY
-    if (scrollY > this.height/2) {
+    if (scrollY > this.height/5 * 4) {
       this.fire = false
     }
-    if (scrollY < this.height/2) {
+    if (scrollY < this.height/5 * 4) {
       this.fire = true
     }
   }

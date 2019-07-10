@@ -2,19 +2,19 @@
   .container
     .bar-wrap
       .top-bar did0es.blog
-    .link-wrap(@mouseover="itemHovered")(@mouseleave="itemLeft")
+    .item01(@mouseover="item01Hovered")(@mouseleave="item01Left")
       nuxt-link(to="/posts/2019-07-09-promare-movie")
-        .title {{ title20190709PromareMovie }}
+        .title {{ title_20190709PromareMovie }}
         .meta-wrap
           .date 2019-07-09
-          .tags(v-for="tag in tags20190709PromareMovie") - {{ tag }}
-          .category - category : {{ category20190709PromareMovie }}
+          .tags(v-for="tag in tags_20190709PromareMovie") - {{ tag }}
+          .category - category : {{ category_20190709PromareMovie }}
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
 import TweenMax from 'gsap'
-import JSON20190709PromareMovie from '../contents/json/2019-07-09-promare-movie.json'
+import _20190709PromareMovie from '../contents/json/2019-07-09-promare-movie.json'
 
 @Component
 export default class extends Vue {
@@ -23,18 +23,27 @@ export default class extends Vue {
       title: 'home'
     }
   }
-  title20190709PromareMovie = JSON20190709PromareMovie.title
-  tags20190709PromareMovie = JSON20190709PromareMovie.tags
-  category20190709PromareMovie = JSON20190709PromareMovie.category
-  itemHovered() {
+  target = ''
+  title_20190709PromareMovie = _20190709PromareMovie.title
+  tags_20190709PromareMovie = _20190709PromareMovie.tags
+  category_20190709PromareMovie = _20190709PromareMovie.category
+  item01Hovered() {
+    this.target = '.item01'
+    this.hovered()
+  }
+  item01Left() {
+    this.target = '.item01'
+    this.left()
+  }
+  hovered() {
     // @ts-ignore
-    TweenMax.to('.link-wrap', 0.8, {
+    TweenMax.to(`${this.target}`, 0.8, {
       backgroundColor: 'rgb(255, 120, 120)'
     })
   }
-  itemLeft() {
+  left() {
     // @ts-ignore
-    TweenMax.to('.link-wrap', 0.8, {
+    TweenMax.to(`${this.target}`, 0.8, {
       backgroundColor: 'rgb(255, 240, 240)'
     })
   }
@@ -75,7 +84,7 @@ a {
   }
   font-size: 2.4rem;
 }
-.link-wrap {
+.item01 {
   background-color: rgb(255, 240, 240);
   @media screen and (max-width: 1000px) {
     width: 80vw;

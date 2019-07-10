@@ -23,7 +23,7 @@ const config: NuxtConfiguration = {
     ]
   },
   meta: [
-    { hid: 'og:image', property: 'og:image', content: 'https://did0es-blog.netlify.com/2019-07-09-promare-movie.jpg' },
+    // { hid: 'og:image', property: 'og:image', content: 'https://did0es-blog.netlify.com/2019-07-09-promare-movie.jpg' },
     { ogImage: 'https://s.gravatar.com/avatar/5297a6f1a0d91b1ef43b75b2915a0628?s=80' },
     { twitterSite: '@did0es' },
     { twitterCreator: '@did0es' }

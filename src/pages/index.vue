@@ -9,6 +9,8 @@
           .date 2019-07-09
           .tags(v-for="tag in tags_20190709PromareMovie") - {{ tag }}
           .category - category : {{ category_20190709PromareMovie }}
+    .blind-small-screen
+      .notion ERROR:大きなサイズの画面にてご覧ください。
 </template>
 
 <script lang="ts">
@@ -64,7 +66,7 @@ html body {
 .container {
   display: flex;
   justify-content: center;
-  font-family: 'Roboto'
+  font-family: 'Roboto';
 }
 a { 
   text-decoration: none;
@@ -79,44 +81,77 @@ a {
 }
 .top-bar {
   font-family: 'Chakra Petch';
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 400px) {
     font-size: 12vw;
   }
   font-size: 2.4rem;
 }
 .item01 {
   background-color: rgb(255, 240, 240);
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 768px) {
     width: 80vw;
     height: 20vh;
     border-radius: 20px;
+  }
+  @media screen and (max-width: 1300px) {
+    width: 50vw;
+    height: 24vw;
+    border-radius: 10px;
   }
   width: 20vw;
   margin-top: 10vh;
   border-radius: 3px;
 }
 .title {
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 400px) {
     font-size: 6vw;
     margin-left: 1rem;
     margin-top: 1rem;
+  }
+  @media screen and (max-width: 1300px) {
+    font-size: 3vw;
+    margin-left: 1rem;
+    margin-top: 1vw;
   }
   font-size: 1rem;
   margin: 0.4rem 0.4rem;
 }
 .date {
   text-align: right;
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 400px) {
     font-size: 3vw;
+  }
+  @media screen and (max-width: 1300px) {
+    font-size: 2vw;
   }
   font-size: 0.8rem;
 }
 .tags, .category {
   text-align: left;
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 400px) {
     font-size: 3vw;
     margin-left: 2vw;
   }
+  @media screen and (max-width: 1300px) {
+    font-size: 2vw;
+  }
   font-size: 0.8rem
+}
+.blind-small-screen {
+  @media screen and (min-width: 300px) {
+    display: none;
+  }
+  background-color: #000;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.notion {
+  color: #fff;
+  font-size: 0.1rem;
 }
 </style>

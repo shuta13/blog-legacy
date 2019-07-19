@@ -1,10 +1,10 @@
 {
   "fileMap": {
     "src/contents/json/2019-07-19-about-me.json": {
-      "title": "名乗らずに話し始めることが多いです(あばうとみー)",
+      "title": "名乗らずに話し始めることが多いです",
       "created_at": "2019-07-19T00:00:00.000Z",
       "tags": [
-        "me"
+        "about_me"
       ],
       "category": "その他",
       "dir": "src/contents/json",

@@ -62,6 +62,9 @@ export default class extends Vue {
 
 <style>
 @import '~/assets/tomorrow-night-bright.css';
+a {
+  color: rgb(255, 120, 120);
+}
 </style>
 
 <style lang="scss" scoped>
@@ -96,9 +99,9 @@ export default class extends Vue {
 }
 .title {
   @media screen and (max-width: 1000px) {
-    height: 7vh;
+    height: 10vh;
     width: 76vw;
-    font-size: 3.2rem;
+    font-size: 3rem;
   }
   height: 10vh;
   width: 44vw;
@@ -120,7 +123,7 @@ export default class extends Vue {
 }
 .body {
   @media screen and (max-width: 1000px) {
-    line-height: 3.2rem;
+    line-height: 3.6rem;
   }
   line-height: 2rem;
 }

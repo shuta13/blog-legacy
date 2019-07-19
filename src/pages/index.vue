@@ -2,7 +2,7 @@
   .container
     .bar-wrap
       .top-bar did0es.blog
-    .item01(@mouseover="item01Hovered")(@mouseleave="item01Left")
+    .item01
       nuxt-link(to="/posts/2019-07-09-promare-movie")
         .title {{ title_20190709PromareMovie }}
         .meta-wrap
@@ -33,26 +33,6 @@ export default class extends Vue {
   title_20190709PromareMovie = _20190709PromareMovie.title
   tags_20190709PromareMovie = _20190709PromareMovie.tags
   category_20190709PromareMovie = _20190709PromareMovie.category
-  item01Hovered() {
-    this.target = '.item01'
-    this.hovered()
-  }
-  item01Left() {
-    this.target = '.item01'
-    this.left()
-  }
-  hovered() {
-    // @ts-ignore
-    TweenMax.to(`${this.target}`, 0.8, {
-      backgroundColor: 'rgb(255, 120, 120)'
-    })
-  }
-  left() {
-    // @ts-ignore
-    TweenMax.to(`${this.target}`, 0.8, {
-      backgroundColor: 'rgb(255, 240, 240)'
-    })
-  }
 }
 </script>
 
@@ -105,6 +85,10 @@ a {
   width: 20vw;
   margin-top: 10vh;
   border-radius: 3px;
+  transition: background-color .6s;
+}
+.item01:hover {
+  background-color: rgb(255, 120, 120);
 }
 .title {
   @media screen and (max-width: 400px) {

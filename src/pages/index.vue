@@ -2,13 +2,22 @@
   .container
     .bar-wrap
       .top-bar did0es.blog
-    .item01
-      nuxt-link(to="/posts/2019-07-09-promare-movie")
-        .title {{ title_20190709PromareMovie }}
-        .meta-wrap
-          .date 2019-07-09
-          .tags(v-for="tag in tags_20190709PromareMovie") - {{ tag }}
-          .category - category : {{ category_20190709PromareMovie }}
+    .item-wrap
+      .item
+        nuxt-link(to="/posts/2019-07-09-promare-movie")
+          .title {{ title_20190709PromareMovie }}
+          .meta-wrap
+            .date 2019-07-09
+            .tags(v-for="tag in tags_20190709PromareMovie") ・ {{ tag }}
+            .category ・ category : {{ category_20190709PromareMovie }}
+      .item
+        //- nuxt-link(to="/posts/2019-07-19-about-me")
+        nuxt-link(to="#")
+          .title {{ title_20190719AboutMe }}
+          .meta-wrap
+            .date 2019-07-19
+            .tags(v-for="tag in tags_20190719AboutMe") ・ {{ tag }}
+            .category ・ category : {{ category_20190719AboutMe }}
     app-blinder
 </template>
 
@@ -17,10 +26,11 @@ import { Component, Vue } from 'nuxt-property-decorator'
 import TweenMax from 'gsap'
 import AppBlinder from '~/components/AppBlinder.vue'
 import _20190709PromareMovie from '../contents/json/2019-07-09-promare-movie.json'
+import _20190719AboutMe from '../contents/json/2019-07-19-about-me.json'
 
 @Component({
   components: {
-    AppBlinder
+    AppBlinder,
   }
 })
 export default class extends Vue {
@@ -30,9 +40,14 @@ export default class extends Vue {
     }
   }
   target = ''
+
   title_20190709PromareMovie = _20190709PromareMovie.title
   tags_20190709PromareMovie = _20190709PromareMovie.tags
   category_20190709PromareMovie = _20190709PromareMovie.category
+
+  title_20190719AboutMe = _20190719AboutMe.title
+  tags_20190719AboutMe = _20190719AboutMe.tags
+  category_20190719AboutMe = _20190719AboutMe.category
 }
 </script>
 
@@ -43,6 +58,7 @@ export default class extends Vue {
 }
 html body {
   width: 100vw;
+  font-size: 62.5%;
 }
 </style>
 
@@ -70,7 +86,10 @@ a {
   }
   font-size: 2.4rem;
 }
-.item01 {
+.item-wrap {
+  margin-top: 6vh;
+}
+.item {
   background-color: rgb(255, 240, 240);
   @media screen and (max-width: 768px) {
     width: 80vw;
@@ -83,11 +102,10 @@ a {
     border-radius: 10px;
   }
   width: 20vw;
-  margin-top: 10vh;
   border-radius: 3px;
   transition: background-color .6s;
 }
-.item01:hover {
+.item:hover {
   background-color: rgb(255, 120, 120);
 }
 .title {

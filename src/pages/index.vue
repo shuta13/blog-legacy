@@ -11,8 +11,8 @@
             .tags(v-for="tag in tags_20190709PromareMovie") ・ {{ tag }}
             .category ・ category : {{ category_20190709PromareMovie }}
       .item
-        //- nuxt-link(to="/posts/2019-07-19-about-me")
-        nuxt-link(to="#")
+        //- nuxt-link(to="#")
+        nuxt-link(to="/posts/2019-07-19-about-me")
           .title {{ title_20190719AboutMe }}
           .meta-wrap
             .date 2019-07-19

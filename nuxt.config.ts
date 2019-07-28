@@ -24,7 +24,7 @@ const config: NuxtConfiguration = {
     ]
   },
   meta: [
-    // { hid: 'og:image', property: 'og:image', content: 'https://did0es-blog.netlify.com/2019-07-09-promare-movie.jpg' },
+    { hid: 'og:image', property: 'og:image', content: 'https://did0es-blog.netlify.com/2019-07-09-promare-movie.jpg' },
     // ogImage: 'https://gravatar.com/avatar/5297a6f1a0d91b1ef43b75b2915a0628?s=80',
     // twitterCard: 'summary',
     // twitterSite: '@did0es',
@@ -35,7 +35,7 @@ const config: NuxtConfiguration = {
     { hid: 'og:url', property: 'og:url', content: 'https://did0es-blog.netlify.com' },
     { hid: 'og:title', property: 'og:title', content: 'did0es-blog' },
     { hid: 'og:description', property: 'og:description', content: '@did0esのブログ' },
-    { hid: 'og:image', property: 'og:image', content: 'https://gravatar.com/avatar/5297a6f1a0d91b1ef43b75b2915a0628?s=80' },
+    // { hid: 'og:image', property: 'og:image', content: 'https://gravatar.com/avatar/5297a6f1a0d91b1ef43b75b2915a0628?s=80' },
     { name: 'twitter:card', content: 'summary' },
     { name: 'twitter:site', content: '@did0es' },
   ],

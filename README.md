@@ -1,6 +1,6 @@
 # blog
 
-[!Netlify](https://app.netlify.com/sites/did0es-blog/deploys)
+[Netlify Status](https://app.netlify.com/sites/did0es-blog/deploys)
 
 > my blog
 

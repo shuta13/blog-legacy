@@ -52,7 +52,7 @@ export default class extends Vue {
         {
           hid: 'og:url',
           property: 'og:url',
-          content: 'https://did0es-blog.netlify.com'
+          content: `https://did0es-blog.netlify.com${this.$route.path}`
         },
         {
           hid: 'og:title',

@@ -51,6 +51,16 @@ export default class extends Vue {
       title: this.title,
       meta: [
         {
+          hid: 'og:type',
+          property: 'og:type',
+          content: 'article'
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: 'https://gravatar.com/avatar/5297a6f1a0d91b1ef43b75b2915a0628?s=80'
+        },
+        {
           hid: 'og:title',
 					property: 'og:title',
 					content: this.title

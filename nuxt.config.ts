@@ -28,7 +28,7 @@ const config: NuxtConfiguration = {
       // twitterCard: 'summary',
       // twitterSite: '@did0es',
       // twitterCreator: '@did0es'
-      { hid: 'og:type', property: 'og:type', content: 'website' },
+      // { hid: 'og:type', property: 'og:type', content: 'website' },
       { hid: 'og:image', property: 'og:image', content: 'https://gravatar.com/avatar/5297a6f1a0d91b1ef43b75b2915a0628?s=80' },
       { name: 'twitter:card', content: 'summary' },
       { name: 'twitter:site', content: '@did0es' },

@@ -47,40 +47,24 @@ export default class extends Vue {
     this.url = `https://did0es-blog.netlify.com${this.$route.path}`
   }
   head() {
-    const title = this.title
     return {
-      title: title,
+      title: this.title,
       meta: [
-        // {
-        //   hid: 'og:title',
-				// 	property: 'og:title',
-				// 	content: this.title
-        // },
-        // {
-				// 	hid: 'og:description',
-				// 	property: 'og:description',
-				// 	content: this.title
-        // },
-        // {
-				// 	hid: 'og:url',
-				// 	property: 'og:url',
-				// 	content: this.url
-        // }
-        {
-          hid: 'og:url',
-          property: 'og:url',
-          content: 'https://did0es-blog.netlify.com/posts/2019-07-09-promare-movie'
-        },
         {
           hid: 'og:title',
-          property: 'og:title',
-          content: 'did0es-blog'
+					property: 'og:title',
+					content: this.title
         },
         {
-          hid: 'og:description',
-          property: 'og:description',
-          content: '@did0esのブログ'
+					hid: 'og:description',
+					property: 'og:description',
+					content: this.title
         },
+        {
+					hid: 'og:url',
+					property: 'og:url',
+					content: this.url
+        }
       ]
     }
   }

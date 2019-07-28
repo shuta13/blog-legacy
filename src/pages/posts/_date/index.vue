@@ -51,21 +51,36 @@ export default class extends Vue {
     return {
       title: title,
       meta: [
+        // {
+        //   hid: 'og:title',
+				// 	property: 'og:title',
+				// 	content: this.title
+        // },
+        // {
+				// 	hid: 'og:description',
+				// 	property: 'og:description',
+				// 	content: this.title
+        // },
+        // {
+				// 	hid: 'og:url',
+				// 	property: 'og:url',
+				// 	content: this.url
+        // }
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: 'https://did0es-blog.netlify.com'
+        },
         {
           hid: 'og:title',
-					property: 'og:title',
-					content: this.title
+          property: 'og:title',
+          content: 'did0es-blog'
         },
         {
-					hid: 'og:description',
-					property: 'og:description',
-					content: this.title
+          hid: 'og:description',
+          property: 'og:description',
+          content: '@did0esのブログ'
         },
-        {
-					hid: 'og:url',
-					property: 'og:url',
-					content: this.url
-				}
       ]
     }
   }

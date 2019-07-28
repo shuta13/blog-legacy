@@ -68,7 +68,7 @@ export default class extends Vue {
     }
   }
   get url() {
-		return `https://did0es-blog.netlify.com${this.$route.fullPath}`
+		return `https://did0es-blog.netlify.com${this.$route.path}`
 	}
   handleScroll() {
     this.scrollY = window.scrollY

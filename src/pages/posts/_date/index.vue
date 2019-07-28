@@ -15,7 +15,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'nuxt-property-decorator'
+import { Component, Provide, Vue } from 'nuxt-property-decorator'
 import { TweenMax, Power4 } from 'gsap'
 import AppBlinder from '~/components/AppBlinder.vue'
 import FireObject01 from '~/components/FireObject01.vue'
@@ -29,11 +29,13 @@ import FireObject02 from '~/components/FireObject02.vue'
   }
 })
 export default class extends Vue {
+  @Provide()
   title = ''
   fire = true
   width = 0
   height = 0
   scrollY = 0
+
   asyncData({ params }) {
     return Object.assign({}, require(`~/contents/json/${params.date}.json`), { params });
   }
@@ -45,9 +47,29 @@ export default class extends Vue {
   head() {
     const title = this.title
     return {
-      title: title
+      title: title,
+      meta: [
+        {
+          hid: 'og:title',
+					property: 'og:title',
+					content: this.title
+        },
+        {
+					hid: 'og:description',
+					property: 'og:description',
+					content: this.title
+        },
+        {
+					hid: 'og:url',
+					property: 'og:url',
+					content: this.url
+				}
+      ]
     }
   }
+  get url() {
+		return `https://did0es-blog.netlify.com${this.$route.fullPath}`
+	}
   handleScroll() {
     this.scrollY = window.scrollY
     if (scrollY > this.height/5 * 4) {

@@ -31,6 +31,7 @@ import FireObject02 from '~/components/FireObject02.vue'
 export default class extends Vue {
   @Provide()
   title = ''
+  url = ''
   fire = true
   width = 0
   height = 0
@@ -43,6 +44,7 @@ export default class extends Vue {
     this.width = window.innerWidth
     this.height = window.innerHeight
     window.addEventListener('scroll', this.handleScroll)
+    this.url = `https://did0es-blog.netlify.com${this.$route.path}`
   }
   head() {
     const title = this.title
@@ -67,9 +69,6 @@ export default class extends Vue {
       ]
     }
   }
-  get url() {
-		return `https://did0es-blog.netlify.com${this.$route.path}`
-	}
   handleScroll() {
     this.scrollY = window.scrollY
     if (scrollY > this.height/5 * 4) {

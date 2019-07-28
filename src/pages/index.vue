@@ -4,7 +4,7 @@
       .top-bar did0es.blog
     .item-wrap
       .item
-        nuxt-link(to="/posts/2019-07-09-promare-movie")
+        a(href="/posts/2019-07-09-promare-movie")
           .title {{ title_20190709PromareMovie }}
           .meta-wrap
             .date 2019-07-09
@@ -12,7 +12,7 @@
             .category ・ category : {{ category_20190709PromareMovie }}
       .item
         //- nuxt-link(to="#")
-        nuxt-link(to="/posts/2019-07-19-about-me")
+        a(href="/posts/2019-07-19-about-me")
           .title {{ title_20190719AboutMe }}
           .meta-wrap
             .date 2019-07-19

@@ -81,10 +81,10 @@ a {
 }
 .top-bar {
   font-family: 'Chakra Petch';
-  @media screen and (max-width: 400px) {
-    font-size: 12vw;
+  @media screen and (max-width: 1000px) {
+    font-size: 4vw;
   }
-  font-size: 2.4rem;
+  font-size: 2.4vw;
 }
 .item-wrap {
   margin-top: 6vh;
@@ -98,10 +98,11 @@ a {
   }
   @media screen and (max-width: 1300px) {
     width: 50vw;
-    height: 24vw;
+    height: 20vw;
     border-radius: 10px;
   }
   width: 20vw;
+  height: 12vh;
   border-radius: 3px;
   transition: background-color .6s;
 }
@@ -109,13 +110,13 @@ a {
   background-color: rgb(255, 120, 120);
 }
 .title {
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 768px) {
     font-size: 6vw;
     margin-left: 1rem;
     margin-top: 1rem;
   }
   @media screen and (max-width: 1300px) {
-    font-size: 3vw;
+    font-size: 2.8vw;
     margin-left: 1rem;
     margin-top: 1vw;
   }

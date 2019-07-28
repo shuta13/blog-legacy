@@ -22,7 +22,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'nuxt-property-decorator'
+import { Component, Provide, Vue } from 'nuxt-property-decorator'
 import TweenMax from 'gsap'
 import AppBlinder from '~/components/AppBlinder.vue'
 import _20190709PromareMovie from '../contents/json/2019-07-09-promare-movie.json'
@@ -34,11 +34,7 @@ import _20190719AboutMe from '../contents/json/2019-07-19-about-me.json'
   }
 })
 export default class extends Vue {
-  head() {
-    return {
-      title: 'home'
-    }
-  }
+  @Provide()
   target = ''
 
   title_20190709PromareMovie = _20190709PromareMovie.title
@@ -48,6 +44,29 @@ export default class extends Vue {
   title_20190719AboutMe = _20190719AboutMe.title
   tags_20190719AboutMe = _20190719AboutMe.tags
   category_20190719AboutMe = _20190719AboutMe.category
+
+  head() {
+    return {
+      title: 'home',
+      meta: [
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: 'https://did0es-blog.netlify.com'
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: 'did0es-blog'
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: '@did0esのブログ'
+        },
+      ]
+    }
+  }
 }
 </script>
 

@@ -47,24 +47,7 @@ export default class extends Vue {
 
   head() {
     return {
-      title: 'home',
-      meta: [
-        {
-          hid: 'og:url',
-          property: 'og:url',
-          content: `https://did0es-blog.netlify.com${this.$route.path}`
-        },
-        {
-          hid: 'og:title',
-          property: 'og:title',
-          content: 'did0es-blog'
-        },
-        {
-          hid: 'og:description',
-          property: 'og:description',
-          content: '@did0esのブログ'
-        },
-      ]
+      title: 'home'
     }
   }
 }

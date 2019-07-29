@@ -6,7 +6,7 @@
 import * as THREE from 'three'
 
 export default {
-  data() {
+  data () {
     return {
       width: null,
       height: null,
@@ -21,7 +21,7 @@ export default {
       started: false
     }
   },
-  mounted() {
+  mounted () {
     this.init()
     this.configScene()
     this.positionCamera()
@@ -31,7 +31,7 @@ export default {
     this.startScene()
   },
   methods: {
-    init() {
+    init () {
       this.width = window.innerWidth
       this.height = window.innerHeight
       this.scene = new THREE.Scene()
@@ -47,23 +47,23 @@ export default {
       this.object = new THREE.Object3D()
       this.scene.add(this.object)
     },
-    configScene() {
-      const light = new THREE.AmbientLight(0xffffff0)
+    configScene () {
+      const light = new THREE.AmbientLight(0xFFFFFF0)
       this.scene.add(light)
     },
-    positionCamera() {
+    positionCamera () {
       this.camera.position.set(0, 0, 30)
     },
     // 処理
-    setObject() {
+    setObject () {
       const geometry = new THREE.TetrahedronGeometry(20)
       const group = new THREE.Group()
       for (let i = 0; i < 100; i++) {
         const material = new THREE.MeshNormalMaterial({ color: 0xE7504D })
         this.mesh = new THREE.Mesh(geometry, material)
         this.mesh.position.x = Math.random()
-				this.mesh.position.y = Math.random()
-				this.mesh.position.z = Math.random()
+        this.mesh.position.y = Math.random()
+        this.mesh.position.z = Math.random()
         this.mesh.rotation.x = Math.random() * 2 * Math.PI
         // 後半
         this.mesh.rotation.y = Math.random() * 2 * Math.PI
@@ -71,26 +71,26 @@ export default {
       }
       this.object.add(group)
     },
-    bindWindowEvents() {
+    bindWindowEvents () {
       window.addEventListener('resize', this.handleWindowResize, false)
       document.addEventListener('mousemove', this.onDocumentMouseMove, false)
     },
-    handleWindowResize() {
+    handleWindowResize () {
       this.camera.aspect = this.width / this.height
     },
-    onDocumentMouseMove( event ) {
-			this.mouseX = ( event.clientX - this.width/2 ) * 10
-			this.mouseY = ( event.clientY - this.height/2 ) * 10
-		},
-    appendElement() {
+    onDocumentMouseMove (event) {
+      this.mouseX = (event.clientX - this.width / 2) * 10
+      this.mouseY = (event.clientY - this.height / 2) * 10
+    },
+    appendElement () {
       this.$refs.canvas.appendChild(this.renderer.domElement)
     },
-    startScene() {
-      if (this.started) return
+    startScene () {
+      if (this.started) { return }
       this.renderScene()
       this.started = !this.started
     },
-    renderScene() {
+    renderScene () {
       requestAnimationFrame(this.renderScene)
       this.renderer.render(this.scene, this.camera)
       this.camera.updateProjectionMatrix()

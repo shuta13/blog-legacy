@@ -5,7 +5,10 @@
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
-export default class extends Vue {}
+
+@Component
+class AppBlinder extends Vue {}
+export default AppBlinder
 </script>
 
 <style lang="scss" scoped>

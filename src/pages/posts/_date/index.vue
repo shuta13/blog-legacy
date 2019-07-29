@@ -16,7 +16,6 @@
 
 <script lang="ts">
 import { Component, Provide, Vue } from 'nuxt-property-decorator'
-import { TweenMax, Power4 } from 'gsap'
 import AppBlinder from '~/components/AppBlinder.vue'
 import FireObject01 from '~/components/FireObject01.vue'
 import FireObject02 from '~/components/FireObject02.vue'
@@ -28,7 +27,7 @@ import FireObject02 from '~/components/FireObject02.vue'
     FireObject02
   }
 })
-export default class extends Vue {
+class Posts extends Vue {
   @Provide()
   title = ''
   url = ''
@@ -37,52 +36,37 @@ export default class extends Vue {
   height = 0
   scrollY = 0
 
-  asyncData({ params }) {
-    return Object.assign({}, require(`~/contents/json/${params.date}.json`), { params });
+  asyncData ({ params }) {
+    return Object.assign({}, require(`~/contents/json/${params.date}.json`), { params })
   }
-  mounted() {
+  mounted () {
     this.width = window.innerWidth
     this.height = window.innerHeight
     window.addEventListener('scroll', this.handleScroll)
     this.url = `https://did0es-blog.netlify.com${this.$route.path}`
   }
-  head() {
+  head () {
     return {
       title: this.title,
       meta: [
-        {
-          hid: 'description',
-          property: 'description',
-          content: '@did0esのブログ'
-        },
-        // {
-        //   hid: 'og:title',
-				// 	property: 'og:title',
-				// 	content: this.title
-        // },
-        {
-					hid: 'og:description',
-					property: 'og:description',
-					content: this.title
-        },
-        {
-					hid: 'og:url',
-					property: 'og:url',
-					content: this.url
-        }
+        { hid: 'description', property: 'description', content: `${this.title}` },
+        { hid: 'og:title', property: 'og:title', content: `${this.title}` },
+        { hid: 'og:description', property: 'og:description', content: `${this.title}` },
+        { hid: 'og:url', property: 'og:url', content: `${this.url}` }
       ]
     }
   }
-  handleScroll() {
+  handleScroll () {
     this.scrollY = window.scrollY
-    if (scrollY > this.height/5 * 4) {
+    if (scrollY > this.height / 5 * 4) {
       this.fire = false
     }
-    if (scrollY < this.height/5 * 4) {
+    if (scrollY < this.height / 5 * 4) {
       this.fire = true
     }
   }
 }
+export default Posts
 </script>
 
 <style>

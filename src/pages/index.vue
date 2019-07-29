@@ -23,34 +23,40 @@
 
 <script lang="ts">
 import { Component, Provide, Vue } from 'nuxt-property-decorator'
-import TweenMax from 'gsap'
-import AppBlinder from '~/components/AppBlinder.vue'
 import _20190709PromareMovie from '../contents/json/2019-07-09-promare-movie.json'
 import _20190719AboutMe from '../contents/json/2019-07-19-about-me.json'
+import AppBlinder from '~/components/AppBlinder.vue'
 
 @Component({
   components: {
-    AppBlinder,
+    AppBlinder
   }
 })
-export default class extends Vue {
+class Home extends Vue {
   @Provide()
   target = ''
+  title_20190709PromareMovie = _20190709PromareMovie.title // eslint-disable-line
+  tags_20190709PromareMovie = _20190709PromareMovie.tags // eslint-disable-line
+  category_20190709PromareMovie = _20190709PromareMovie.category // eslint-disable-line
 
-  title_20190709PromareMovie = _20190709PromareMovie.title
-  tags_20190709PromareMovie = _20190709PromareMovie.tags
-  category_20190709PromareMovie = _20190709PromareMovie.category
+  title_20190719AboutMe = _20190719AboutMe.title // eslint-disable-line
+  tags_20190719AboutMe = _20190719AboutMe.tags // eslint-disable-line
+  category_20190719AboutMe = _20190719AboutMe.category // eslint-disable-line
 
-  title_20190719AboutMe = _20190719AboutMe.title
-  tags_20190719AboutMe = _20190719AboutMe.tags
-  category_20190719AboutMe = _20190719AboutMe.category
-
-  head() {
+  head () {
     return {
-      title: 'home'
+      title: 'home',
+      meta: [
+        { hid: 'description', property: 'description', content: '@did0esのブログ' },
+        { hid: 'og:type', property: 'og:type', content: 'website' },
+        { hid: 'og:url', property: 'og:url', content: 'https://did0es-blog.netlify.com' },
+        { hid: 'og:title', property: 'og:title', content: 'did0es-blog' },
+        { hid: 'og:description', property: 'og:description', content: '@did0esのブログ' }
+      ]
     }
   }
 }
+export default Home
 </script>
 
 <style>

@@ -30,7 +30,6 @@ import FireObject02 from '~/components/FireObject02.vue'
 class Posts extends Vue {
   @Provide()
   title = ''
-  url = ''
   fire = true
   width = 0
   height = 0
@@ -43,18 +42,20 @@ class Posts extends Vue {
     this.width = window.innerWidth
     this.height = window.innerHeight
     window.addEventListener('scroll', this.handleScroll)
-    this.url = `https://did0es-blog.netlify.com${this.$route.path}`
   }
   head () {
     return {
       title: this.title,
       meta: [
-        { hid: 'description', property: 'description', content: `${this.title}` },
-        { hid: 'og:title', property: 'og:title', content: `${this.title}` },
-        { hid: 'og:description', property: 'og:description', content: `${this.title}` },
+        { hid: 'description', property: 'description', content: 'foo' },
+        { hid: 'og:description', property: 'og:description', content: 'piyo' },
+        { hid: 'og:title', property: 'og:title', content: 'hoge' },
         { hid: 'og:url', property: 'og:url', content: `${this.url}` }
       ]
     }
+  }
+  get url() {
+    return `https://did0es-blog.netlify.com${this.$route.path}`
   }
   handleScroll () {
     this.scrollY = window.scrollY

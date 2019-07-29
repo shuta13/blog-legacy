@@ -70,7 +70,8 @@ html body {
   justify-content: center;
   font-family: 'Roboto';
 }
-a { 
+a {
+  width: 100vw;
   text-decoration: none;
   color: #000;
 }
@@ -106,6 +107,10 @@ a {
   width: 20vw;
   height: 12vh;
   border-radius: 3px;
+  margin-top: 2vh;
+  display: flex;
+  justify-content: center;
+  // align-items: center;
   transition: background-color .6s;
 }
 .item:hover {

@@ -21,6 +21,7 @@ const config: NuxtConfiguration = {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap' }
     ],
     meta: [
+      { charset: 'utf-8' },
       { hid: 'og:image', property: 'og:image', content: 'https://gravatar.com/avatar/5297a6f1a0d91b1ef43b75b2915a0628?s=80' },
       { name: 'twitter:card', content: 'summary' },
       { name: 'twitter:site', content: '@did0es' },

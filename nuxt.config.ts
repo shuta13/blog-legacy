@@ -7,13 +7,13 @@ const config: NuxtConfiguration = {
     optimizedImages: true
   },
   // css: ['minireset.css'], // mdの変換がうまくいかないため
-  manifest: {
-    lang: 'ja',
-    name: 'did0es.blog.me',
-    short_name: 'did0es-blog',
-    description: '@did0esのblog',
-    orientation: 'portrait'
-  },
+  // manifest: {
+  //   lang: 'ja',
+  //   name: 'did0es.blog.me',
+  //   short_name: 'did0es-blog',
+  //   description: '@did0esのblog',
+  //   orientation: 'portrait'
+  // },
   head: {
     titleTemplate: '%s - did0es.blog.me',
     link: [

@@ -43,6 +43,17 @@ class Posts extends Vue {
     this.height = window.innerHeight
     window.addEventListener('scroll', this.handleScroll)
   }
+  head () {
+    return {
+      title: this.title,
+      meta: [
+        { hid: 'description', property: 'description', content: this.title },
+        { hid: 'og:description', property: 'og:description', content: this.title },
+        { hid: 'og:title', property: 'og:title', content: this.title },
+        { hid: 'og:url', property: 'og:url', content: this.url }
+      ]
+    }
+  }
   get url() {
     return `https://did0es-blog.netlify.com${this.$route.path}`
   }
@@ -53,18 +64,6 @@ class Posts extends Vue {
     }
     if (scrollY < this.height / 5 * 4) {
       this.fire = true
-    }
-  }
-  // @ts-ignore
-  head () {
-    return {
-      title: this.title,
-      meta: [
-        { hid: 'description', property: 'description', content: 'foo' },
-        { hid: 'og:description', property: 'og:description', content: 'piyo' },
-        { hid: 'og:title', property: 'og:title', content: 'hoge' },
-        { hid: 'og:url', property: 'og:url', content: 'https://did0es-blog.netlify.com/posts/2019-07-09-promare-movie' }
-      ]
     }
   }
 }

@@ -50,8 +50,8 @@ class Home extends Vue {
         { hid: 'description', property: 'description', content: '@did0esのブログ' },
         { hid: 'og:description', property: 'og:description', content: '@did0esのブログ' },
         { hid: 'og:type', property: 'og:type', content: 'website' },
-        { hid: 'og:url', property: 'og:url', content: 'https://did0es-blog.netlify.com' },
-        { hid: 'og:title', property: 'og:title', content: 'did0es-blog' },
+        { hid: 'og:url', property: 'og:url', content: 'https://blog.did0es.me' },
+        { hid: 'og:title', property: 'og:title', content: 'did0es.blog' },
       ]
     }
   }

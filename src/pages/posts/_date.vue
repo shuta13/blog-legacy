@@ -1,9 +1,10 @@
 <template lang="pug">
   .container
-    transition(name="fire1")
+    .bg
+    transition(name="fire1")(v-if="true")
       //- 平めの方
       fire-object01.fire-object(v-if="!fire")
-    transition(name="fire2")
+    transition(name="fire2")(v-if="true")
       //- 出っ張ってる方
       fire-object02.fire-object(v-if="fire")
     .contents-wrap
@@ -87,6 +88,12 @@ a {
   width: 100vw;
   display: flex;
   justify-content: center;
+}
+.bg {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, .4);
 }
 .fire-object {
   position: fixed;

@@ -15,7 +15,7 @@ const config: NuxtConfiguration = {
   //   orientation: 'portrait'
   // },
   head: {
-    titleTemplate: '%s - did0es.blog.me',
+    titleTemplate: '%s - blog.did0es.me',
     link: [
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap' }

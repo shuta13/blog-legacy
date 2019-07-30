@@ -9,8 +9,7 @@
     .contents-wrap
       .title {{ title }}
       .post-meta
-        time hoge
-        //- time {{ params.date }}
+        time {{ params.date }}
       .body(v-html="bodyHtml")
     app-blinder
 </template>
@@ -31,7 +30,7 @@ import FireObject02 from '~/components/FireObject02.vue'
 })
 class Posts extends Vue {
   @Provide()
-  title = 'hoo'
+  title = ''
   fire = true
   width = 0
   height = 0
@@ -41,10 +40,9 @@ class Posts extends Vue {
   //   // @ts-ignore
   //   return sourceFileArray.includes(`src/contents/${params.date}.md`);
   // }
-
-  // asyncData ({ params }) {
-  //   return Object.assign({}, require(`~/contents/json/${params.date}.json`), { params })
-  // }
+  asyncData ({ params }) {
+    return Object.assign({}, require(`~/contents/json/${params.date}.json`), { params })
+  }
   mounted () {
     this.width = window.innerWidth
     this.height = window.innerHeight

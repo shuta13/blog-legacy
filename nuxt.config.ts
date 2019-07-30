@@ -38,7 +38,11 @@ const config: NuxtConfiguration = {
     cache: true
   },
   generate: {
-    fallback: true
+    fallback: true,
+    routes: [
+      '/posts/2019-07-09-promare-movie',
+      '/posts/2019-07-19-about-me'
+    ]
   }
 }
 export default config

@@ -9,13 +9,15 @@
     .contents-wrap
       .title {{ title }}
       .post-meta
-        time {{ params.date }}
+        time hoge
+        //- time {{ params.date }}
       .body(v-html="bodyHtml")
     app-blinder
 </template>
 
 <script lang="ts">
 import { Component, Provide, Vue } from 'nuxt-property-decorator'
+import sourceFileArray from '../../contents/json/contents.json'
 import AppBlinder from '~/components/AppBlinder.vue'
 import FireObject01 from '~/components/FireObject01.vue'
 import FireObject02 from '~/components/FireObject02.vue'
@@ -29,15 +31,20 @@ import FireObject02 from '~/components/FireObject02.vue'
 })
 class Posts extends Vue {
   @Provide()
-  title = ''
+  title = 'hoo'
   fire = true
   width = 0
   height = 0
   scrollY = 0
 
-  asyncData ({ params }) {
-    return Object.assign({}, require(`~/contents/json/${params.date}.json`), { params })
-  }
+  // validate({ params }) {
+  //   // @ts-ignore
+  //   return sourceFileArray.includes(`src/contents/${params.date}.md`);
+  // }
+
+  // asyncData ({ params }) {
+  //   return Object.assign({}, require(`~/contents/json/${params.date}.json`), { params })
+  // }
   mounted () {
     this.width = window.innerWidth
     this.height = window.innerHeight
@@ -46,12 +53,12 @@ class Posts extends Vue {
   head () {
     return {
       title: this.title,
-      // meta: [
-      //   { hid: 'description', property: 'description', content: this.title },
-      //   { hid: 'og:description', property: 'og:description', content: this.title },
-      //   { hid: 'og:title', property: 'og:title', content: this.title },
-      //   { hid: 'og:url', property: 'og:url', content: this.url }
-      // ]
+      meta: [
+        { hid: 'description', property: 'description', content: this.title },
+        { hid: 'og:description', property: 'og:description', content: this.title },
+        { hid: 'og:title', property: 'og:title', content: this.title },
+        { hid: 'og:url', property: 'og:url', content: this.url }
+      ]
     }
   }
   get url() {

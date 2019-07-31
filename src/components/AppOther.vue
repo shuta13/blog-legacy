@@ -6,7 +6,7 @@
 
       .item
         a(href="/posts/2019-07-19-about-me")
-        .title {{ title_20190719AboutMe }}
+          .title {{ title_20190719AboutMe }}
           .meta-wrap
             .tags-wrap tag
               .tags(v-for="tag in tags_20190719AboutMe" :key="tag") {{ tag }}
@@ -17,7 +17,7 @@
 
       .item
         a(href="/posts/2019-07-09-promare-movie")
-        .title {{ title_20190709PromareMovie }}
+          .title {{ title_20190709PromareMovie }}
           .meta-wrap
             .tags-wrap tag
               .tags(v-for="tag in tags_20190709PromareMovie" :key="tag") {{ tag }}

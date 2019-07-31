@@ -6,7 +6,7 @@
 
       .item
         a(href="/posts/2019-07-19-about-me")
-        .title {{ title_20190719AboutMe }}
+          .title {{ title_20190719AboutMe }}
           .meta-wrap
             .tags-wrap tag
               .tags(v-for="tag in tags_20190719AboutMe" :key="tag") {{ tag }}
@@ -17,7 +17,7 @@
 
       .item
         a(href="/posts/2019-07-09-promare-movie")
-        .title {{ title_20190709PromareMovie }}
+          .title {{ title_20190709PromareMovie }}
           .meta-wrap
             .tags-wrap tag
               .tags(v-for="tag in tags_20190709PromareMovie" :key="tag") {{ tag }}
@@ -113,22 +113,20 @@ a {
   margin-top: 6vh;
 }
 .item {
-  background-color: rgba(255, 250, 255, 1);
+  background-color: rgba(250, 250, 255, 1);
   width: 360px;
   height: 142px;
   border-radius: 3px;
   margin-top: 2vh;
-  display: flex;
-  justify-content: center;
   transition: background-color .8s;
 }
 .item:hover {
   filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.2));
 }
 .title {
+  left: 0;
   width: 100%;
   font-size: 1.2rem;
-  margin: 0.4rem 0.4rem;
 }
 .date-wrap {
   text-align: right;

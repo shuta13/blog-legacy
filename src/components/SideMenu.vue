@@ -70,7 +70,7 @@ a:hover {
   margin-bottom: 20px;
 }
 .item-wrap {
-  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.6));
+  filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.6));
   height: 40px;
   padding: 8px 8px;
   border-radius: 20px;
@@ -81,6 +81,9 @@ a:hover {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+}
+.item-wrap:hover {
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.6));
 }
 .item {
   font-size: 24px;

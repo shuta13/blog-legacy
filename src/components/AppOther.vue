@@ -116,7 +116,6 @@ a {
 }
 .item {
   background-color: rgba(255, 250, 255, 1);
-  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2));
   width: 360px;
   height: 142px;
   border-radius: 3px;
@@ -124,6 +123,9 @@ a {
   display: flex;
   justify-content: center;
   transition: background-color .8s;
+}
+.item:hover {
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.2));
 }
 .title {
   font-size: 1.2rem;

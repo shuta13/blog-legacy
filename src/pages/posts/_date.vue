@@ -90,11 +90,11 @@ export default Posts
 <style>
 @import '~/assets/tomorrow-night-bright.css';
 a {
-  color: rgba(140, 120, 160, 1);
-  transition: color .4s;
+  color: rgba(100, 90, 140, 1);
+  transition: color .2s;
 }
 a:hover {
-  color: rgb(160, 80, 220);
+  color: rgba(160, 140, 180, 1);
 }
 </style>
 
@@ -165,7 +165,7 @@ a:hover {
   align-items: center;
   padding: 1.2vh 1.2vw;
   font-size: 1.6rem;
-  background-color: rgba(140, 120, 160, .8);
+  background-color: rgba(160, 150, 180, .8);
 }
 .post-meta {
   @media screen and (max-width: 768px) {

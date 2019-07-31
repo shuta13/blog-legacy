@@ -115,7 +115,7 @@ a {
   margin-top: 6vh;
 }
 .item {
-  background-color: rgba(255, 250, 255, 1);
+  background-color: rgba(250, 250, 255, 1);
   width: 360px;
   height: 142px;
   border-radius: 3px;

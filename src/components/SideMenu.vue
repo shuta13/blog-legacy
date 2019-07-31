@@ -44,7 +44,7 @@ a:hover {
 .side-menu {
   width: 24vw;
   height: 100vh;
-  background-color: rgba(200, 190, 200, .8);
+  background-color: rgba(195, 190, 210, .8);
   display: flex;
 }
 .contents-wrap {

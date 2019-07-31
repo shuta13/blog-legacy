@@ -123,6 +123,7 @@ img {
     height: 8vw;
     margin-top: 1vw;
     margin-left: 1vw;
+    display: none;
   }
   position: fixed;
   left: 0;

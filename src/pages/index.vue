@@ -11,7 +11,6 @@
             .tags(v-for="tag in tags_20190709PromareMovie") ・ {{ tag }}
             .category ・ category : {{ category_20190709PromareMovie }}
       .item
-        //- nuxt-link(to="#")
         a(href="/posts/2019-07-19-about-me")
           .title {{ title_20190719AboutMe }}
           .meta-wrap
@@ -35,6 +34,7 @@ import AppBlinder from '~/components/AppBlinder.vue'
 class Home extends Vue {
   @Provide()
   target = ''
+
   title_20190709PromareMovie = _20190709PromareMovie.title // eslint-disable-line
   tags_20190709PromareMovie = _20190709PromareMovie.tags // eslint-disable-line
   category_20190709PromareMovie = _20190709PromareMovie.category // eslint-disable-line
@@ -99,7 +99,7 @@ a {
   margin-top: 6vh;
 }
 .item {
-  background-color: rgb(255, 240, 240);
+  background-color: rgba(255, 240, 255, 1);
   @media screen and (max-width: 768px) {
     width: 80vw;
     height: 20vh;
@@ -120,7 +120,7 @@ a {
   transition: background-color .6s;
 }
 .item:hover {
-  background-color: rgb(255, 120, 120);
+  background-color: rgba(240, 160, 200, 1);
 }
 .title {
   @media screen and (max-width: 768px) {

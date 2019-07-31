@@ -46,7 +46,7 @@ const config: NuxtConfiguration = {
       // '/posts/2019-07-19-about-me'
       return Object.values(contents.fileMap)
         .map(params => {
-          const { base, ext, category, tags } = params
+          const { base, ext } = params
           return `posts/${path.basename(base, ext)}`
         })
     }

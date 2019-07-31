@@ -10,8 +10,8 @@
           .meta-wrap
             .tags-wrap tag
               .tags(v-for="tag in tags_20190719AboutMe" :key="tag") {{ tag }}
-            a(href="/posts/other").category-wrap category
-              .category {{ category_20190719AboutMe }}
+            .category-wrap category
+              a(href="/posts/other").category {{ category_20190719AboutMe }}
             .date-wrap date
               .date 2019/07/19
 
@@ -21,8 +21,8 @@
           .meta-wrap
             .tags-wrap tag
               .tags(v-for="tag in tags_20190709PromareMovie" :key="tag") {{ tag }}
-            a(href="/posts/other").category-wrap category
-              .category {{ category_20190709PromareMovie }}
+            .category-wrap category
+              a(href="/posts/other").category {{ category_20190709PromareMovie }}
             .date-wrap date
               .date 2019/07/09
 

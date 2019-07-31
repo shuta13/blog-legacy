@@ -1,5 +1,5 @@
 <template lang="pug">
-  .container
+  .container(@mouseover="handleMouseEvent")
     .bg(v-if="!bgShow")
     .bg-objects(v-if="bgShow")
       transition(name="fire1")
@@ -13,6 +13,8 @@
       .post-meta
         time {{ params.date }}
       .body(v-html="bodyHtml")
+    .side-menu-wrap
+      .side-menu
     app-blinder
 </template>
 
@@ -34,6 +36,7 @@ class Posts extends Vue {
   title = ''
   fire = true
   bgShow = false
+  sideMenuShow = false
   width = 0
   height = 0
   scrollY = 0
@@ -59,7 +62,7 @@ class Posts extends Vue {
     }
   }
   get url() {
-    return `https://did0es-blog.netlify.com${this.$route.path}`
+    return `https://blog.did0es.me${this.$route.path}`
   }
   handleScroll () {
     this.scrollY = window.scrollY
@@ -73,6 +76,10 @@ class Posts extends Vue {
   updateBgShow() {
     if (this.title === 'プロメア見てきた') this.bgShow = true
     else this.bgShow = false
+  }
+  handleMouseEvent(e) {
+    if (e.offsetX > 340) this.sideMenuShow = true
+    else if (e.offsetX <= 340) this.sideMenuShow = false
   }
 }
 export default Posts
@@ -104,6 +111,23 @@ a:hover {
 .bg-objects {
   position: fixed;
 }
+.side-menu-wrap {
+  @media screen and (max-width: 1000px) {
+    width: 8vw;
+    height: 8vw;
+    margin-top: 8px;
+    margin-left: 8px;
+  }
+  position: fixed;
+  width: 30vw;
+  height: 100vh;
+  left: 0;
+}
+.side-menu {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 1);
+}
 .wrap {
   display: flex;
   justify-content: center;
@@ -121,9 +145,13 @@ a:hover {
   padding-bottom: 2vh;
   background-color: rgba(255, 255, 255, .4);
   position: absolute;
-  width: 60vw;
+  width: 56vw;
   color: #000;
   font-size: 1rem;
+  @media screen and (min-width: 1000px) {
+    right: 0;
+    margin-right: 8vw;
+  }
 }
 .title {
   @media screen and (max-width: 1000px) {

@@ -119,8 +119,6 @@ a {
   height: 142px;
   border-radius: 3px;
   margin-top: 2vh;
-  display: flex;
-  justify-content: center;
   transition: background-color .8s;
 }
 .item:hover {
@@ -129,7 +127,6 @@ a {
 .title {
   width: 100%;
   font-size: 1.2rem;
-  margin: 0.4rem 0.4rem;
 }
 .date-wrap {
   text-align: right;

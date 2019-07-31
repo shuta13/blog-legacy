@@ -136,7 +136,7 @@ a:hover {
 }
 .contents-wrap {
   @media screen and (max-width: 768px) {
-    font-size: 1.6rem;
+    font-size: 0.8rem;
     width: 80vw;
   }
   padding-top: 2vh;
@@ -157,7 +157,7 @@ a:hover {
   @media screen and (max-width: 768px) {
     height: 10vh;
     width: 76vw;
-    font-size: 2.4rem;
+    font-size: 1rem;
   }
   height: 10vh;
   width: 44vw;
@@ -169,8 +169,8 @@ a:hover {
 }
 .post-meta {
   @media screen and (max-width: 768px) {
-    font-size: 1.2rem;
-    margin-top: -2rem;
+    font-size: 0.6rem;
+    margin-top: -1rem;
   }
   font-size: 0.8rem;
   margin-top: -1rem;
@@ -179,7 +179,7 @@ a:hover {
 }
 .body {
   @media screen and (max-width: 768px) {
-    line-height: 3.6rem;
+    line-height: 1.8rem;
   }
   line-height: 2rem;
 }

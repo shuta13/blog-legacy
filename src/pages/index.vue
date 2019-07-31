@@ -118,6 +118,9 @@ a {
   height: 142px;
   border-radius: 3px;
   margin-top: 2vh;
+  @media screen and (max-width: 768px) {
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.2));
+  }
   transition: background-color .8s;
 }
 .item:hover {

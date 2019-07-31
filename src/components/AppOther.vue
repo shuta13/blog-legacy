@@ -4,8 +4,9 @@
       .top-bar #Other
     .item-wrap
 
-      .item
-        a(href="/posts/2019-07-19-about-me")
+      
+      a(href="/posts/2019-07-19-about-me")
+        .item
           .title {{ title_20190719AboutMe }}
           .meta-wrap
             .tags-wrap tag
@@ -15,8 +16,8 @@
             .date-wrap date
               .date 2019/07/19
 
-      .item
-        a(href="/posts/2019-07-09-promare-movie")
+      a(href="/posts/2019-07-09-promare-movie")
+        .item
           .title {{ title_20190709PromareMovie }}
           .meta-wrap
             .tags-wrap tag
@@ -92,6 +93,7 @@ html body {
 }
 a {
   text-decoration: none;
+  height: 100%;
   color: #000;
 }
 .bar-wrap {

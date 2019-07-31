@@ -115,8 +115,8 @@ a:hover {
   @media screen and (max-width: 1000px) {
     width: 8vw;
     height: 8vw;
-    margin-top: 8px;
-    margin-left: 8px;
+    margin-top: 1vw;
+    margin-left: 1vw;
   }
   position: fixed;
   width: 30vw;
@@ -126,7 +126,7 @@ a:hover {
 .side-menu {
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, .4);
+  background-color: rgba(200, 200, 200, .8);
 }
 .wrap {
   display: flex;

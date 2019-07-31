@@ -70,8 +70,8 @@ a:hover {
   margin-bottom: 20px;
 }
 .item-wrap {
-  width: 150px;
   height: 40px;
+  padding: 8px 8px;
   border-radius: 20px;
   background-color: #fff;
   font-family: 'Cutive Mono';

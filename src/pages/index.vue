@@ -8,23 +8,23 @@
         a(href="/posts/2019-07-19-about-me")
           .title {{ title_20190719AboutMe }}
           .meta-wrap
-            .date-wrap
+            .tags-wrap tag
+              .tags(v-for="tag in tags_20190719AboutMe" :key="tag") {{ tag }}
+            a(href="/posts/other").category-wrap category
+              .category {{ category_20190719AboutMe }}
+            .date-wrap date
               .date 2019/07/19
-            .tags-wrap
-              .tags(v-for="tag in tags_20190719AboutMe") {{ tag }}
-            .category-wrap
-              .category # {{ category_20190719AboutMe }}
 
       .item
         a(href="/posts/2019-07-09-promare-movie")
           .title {{ title_20190709PromareMovie }}
           .meta-wrap
-            .date-wrap
+            .tags-wrap tag
+              .tags(v-for="tag in tags_20190709PromareMovie" :key="tag") {{ tag }}
+            a(href="/posts/other").category-wrap category
+              .category {{ category_20190709PromareMovie }}
+            .date-wrap date
               .date 2019/07/09
-            .tags-wrap
-              .tags(v-for="tag in tags_20190709PromareMovie") {{ tag }}
-            .category-wrap
-              .category # {{ category_20190709PromareMovie }}
 
     .side-menu-wrap
       side-menu.side-menu
@@ -105,6 +105,10 @@ a {
   font-family: 'Chakra Petch';
   font-size: 40px;
 }
+.meta-wrap {
+  display: flex;
+  justify-content: center;
+}
 .item-wrap {
   margin-top: 6vh;
 }
@@ -116,26 +120,57 @@ a {
   margin-top: 2vh;
   display: flex;
   justify-content: center;
-  // align-items: center;
-  transition: background-color .6s;
+  transition: background-color .8s;
 }
 .item:hover {
-  background-color: rgba(240, 160, 200, 1);
+  background-color: rgba(250, 170, 210, 1);
 }
 .title {
   font-size: 1rem;
   margin: 0.4rem 0.4rem;
 }
 .date-wrap {
-
+  text-align: right;
 }
 .date {
-  text-align: right;
+  width: 72px;
   font-size: 0.8rem;
 }
-.tags, .category {
-  text-align: left;
-  font-size: 0.8rem
+.tags-wrap, .category-wrap, .date-wrap {
+  width: 80px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+// 上書き
+.date-wrap {
+  width: 90px;
+}
+.tags, .category, .date {
+  font-size: 0.8rem;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: 8px;
+  border-radius: 4px;
+  border: solid 1px rgba(0, 0, 0, .6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 64px;
+  padding: 2px 2px;
+}
+.tags {
+  background-color: #fff;
+}
+.category {
+  background-color: rgba(160, 160, 160, 1);
+  transition: background-color .4s;
+}
+.category:hover {
+  background-color: rgba(220, 220, 220, 1);
+}
+.date {
+  width: 80px;
 }
 .side-menu-wrap {
   @media screen and (max-width: 768px) {

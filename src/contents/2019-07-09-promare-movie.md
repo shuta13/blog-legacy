@@ -4,7 +4,7 @@ created_at: 2019-07-09
 tags: 
  - movie
  - anime
-category: その他
+category: other
 ---
 ### **ネタバレを含む可能性があります**
 

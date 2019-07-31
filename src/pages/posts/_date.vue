@@ -14,21 +14,23 @@
         time {{ params.date }}
       .body(v-html="bodyHtml")
     .side-menu-wrap
-      .side-menu
+      side-menu.side-menu
     app-blinder
 </template>
 
 <script lang="ts">
 import { Component, Provide, Vue } from 'nuxt-property-decorator'
 import AppBlinder from '~/components/AppBlinder.vue'
+import SideMenu from '~/components/SideMenu.vue'
 import FireObject01 from '~/components/FireObject01.vue'
 import FireObject02 from '~/components/FireObject02.vue'
 
 @Component({
   components: {
     AppBlinder,
+    SideMenu,
     FireObject01,
-    FireObject02
+    FireObject02,
   }
 })
 class Posts extends Vue {
@@ -119,14 +121,14 @@ a:hover {
     margin-left: 1vw;
   }
   position: fixed;
-  width: 30vw;
+  width: 28vw;
   height: 100vh;
   left: 0;
 }
 .side-menu {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(200, 200, 200, .8);
+  @media screen and (max-width: 1000px) {
+    display: none; // スマホ用メニュー出来たら外す
+  }
 }
 .wrap {
   display: flex;
@@ -164,7 +166,7 @@ a:hover {
   display: flex;
   align-items: center;
   padding: 1.2vh 1.2vw;
-  font-size: 2rem;
+  font-size: 1.6rem;
   background-color: rgba(180, 160, 200, 1);
 }
 .post-meta {

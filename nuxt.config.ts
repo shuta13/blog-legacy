@@ -20,7 +20,8 @@ const config: NuxtConfiguration = {
     titleTemplate: '%s - blog.did0es.me',
     link: [
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap' }
     ],
     meta: [
       { charset: 'utf-8' },
@@ -48,7 +49,7 @@ const config: NuxtConfiguration = {
         .map(params => {
           const { base, ext } = params
           return `posts/${path.basename(base, ext)}`
-        })
+      })
     }
   }
 }

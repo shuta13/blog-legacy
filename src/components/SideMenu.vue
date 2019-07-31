@@ -42,9 +42,9 @@ a:hover {
   color: rgba(0, 0, 0, 1);
 }
 .side-menu {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(200, 200, 200, .8);
+  width: 24vw;
+  height: 100vh;
+  background-color: rgba(200, 190, 200, .8);
   display: flex;
 }
 .contents-wrap {

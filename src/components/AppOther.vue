@@ -1,8 +1,9 @@
 <template lang="pug">
   .container
     .bar-wrap
-      .top-bar did0es.blog
+      .top-bar #other
     .item-wrap
+
       .item
         a(href="/posts/2019-07-19-about-me")
           .title {{ title_20190719AboutMe }}
@@ -10,6 +11,7 @@
             .date 2019-07-19
             .tags(v-for="tag in tags_20190719AboutMe") ・ {{ tag }}
             .category ・ category : {{ category_20190719AboutMe }}
+
       .item
         a(href="/posts/2019-07-09-promare-movie")
           .title {{ title_20190709PromareMovie }}
@@ -17,6 +19,7 @@
             .date 2019-07-09
             .tags(v-for="tag in tags_20190709PromareMovie") ・ {{ tag }}
             .category ・ category : {{ category_20190709PromareMovie }}
+
     .side-menu-wrap
       side-menu.side-menu
     app-blinder
@@ -35,7 +38,7 @@ import _20190719AboutMe from '../contents/json/2019-07-19-about-me.json'
     SideMenu
   }
 })
-class Home extends Vue {
+class AppOther extends Vue {
   @Provide()
   target = ''
 
@@ -49,18 +52,11 @@ class Home extends Vue {
 
   head () {
     return {
-      title: 'home',
-      meta: [
-        { hid: 'description', property: 'description', content: '@did0esのブログ' },
-        { hid: 'og:description', property: 'og:description', content: '@did0esのブログ' },
-        { hid: 'og:type', property: 'og:type', content: 'website' },
-        { hid: 'og:url', property: 'og:url', content: 'https://blog.did0es.me' },
-        { hid: 'og:title', property: 'og:title', content: 'did0es.blog' },
-      ]
+      title: 'other'
     }
   }
 }
-export default Home
+export default AppOther
 </script>
 
 <style>

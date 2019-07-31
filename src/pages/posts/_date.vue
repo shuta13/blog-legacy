@@ -121,8 +121,6 @@ a:hover {
     margin-left: 1vw;
   }
   position: fixed;
-  width: 28vw;
-  height: 100vh;
   left: 0;
 }
 .side-menu {
@@ -159,7 +157,7 @@ a:hover {
   @media screen and (max-width: 1000px) {
     height: 10vh;
     width: 76vw;
-    font-size: 2.8rem;
+    font-size: 2.4rem;
   }
   height: 10vh;
   width: 44vw;
@@ -167,7 +165,7 @@ a:hover {
   align-items: center;
   padding: 1.2vh 1.2vw;
   font-size: 1.6rem;
-  background-color: rgba(180, 160, 200, 1);
+  background-color: rgba(140, 120, 160, .8);
 }
 .post-meta {
   @media screen and (max-width: 1000px) {

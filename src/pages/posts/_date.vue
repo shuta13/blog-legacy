@@ -114,7 +114,7 @@ a:hover {
   position: fixed;
 }
 .side-menu-wrap {
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 768px) {
     width: 8vw;
     height: 8vw;
     margin-top: 1vw;
@@ -124,7 +124,7 @@ a:hover {
   left: 0;
 }
 .side-menu {
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 768px) {
     display: none; // スマホ用メニュー出来たら外す
   }
 }
@@ -135,7 +135,7 @@ a:hover {
   height: auto;
 }
 .contents-wrap {
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 768px) {
     font-size: 1.6rem;
     width: 80vw;
   }
@@ -148,13 +148,13 @@ a:hover {
   width: 56vw;
   color: #000;
   font-size: 1rem;
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: 768px) {
     right: 0;
-    margin-right: 8vw;
+    margin-right: 12vw;
   }
 }
 .title {
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 768px) {
     height: 10vh;
     width: 76vw;
     font-size: 2.4rem;
@@ -168,7 +168,7 @@ a:hover {
   background-color: rgba(140, 120, 160, .8);
 }
 .post-meta {
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 768px) {
     font-size: 1.2rem;
     margin-top: -2rem;
   }
@@ -178,7 +178,7 @@ a:hover {
   text-align: right;
 }
 .body {
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 768px) {
     line-height: 3.6rem;
   }
   line-height: 2rem;

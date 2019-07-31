@@ -8,17 +8,23 @@
         a(href="/posts/2019-07-19-about-me")
           .title {{ title_20190719AboutMe }}
           .meta-wrap
-            .date 2019-07-19
-            .tags(v-for="tag in tags_20190719AboutMe") ・ {{ tag }}
-            .category ・ category : {{ category_20190719AboutMe }}
+            .date-wrap
+              .date 2019/07/19
+            .tags-wrap
+              .tags(v-for="tag in tags_20190719AboutMe") {{ tag }}
+            .category-wrap
+              .category # {{ category_20190719AboutMe }}
 
       .item
         a(href="/posts/2019-07-09-promare-movie")
           .title {{ title_20190709PromareMovie }}
           .meta-wrap
-            .date 2019-07-09
-            .tags(v-for="tag in tags_20190709PromareMovie") ・ {{ tag }}
-            .category ・ category : {{ category_20190709PromareMovie }}
+            .date-wrap
+              .date 2019/07/09
+            .tags-wrap
+              .tags(v-for="tag in tags_20190709PromareMovie") {{ tag }}
+            .category-wrap
+              .category # {{ category_20190709PromareMovie }}
 
     .side-menu-wrap
       side-menu.side-menu
@@ -90,28 +96,15 @@ a {
 }
 .top-bar {
   font-family: 'Chakra Petch';
-  @media screen and (max-width: 1000px) {
-    font-size: 72px;
-  }
-  font-size: 2.4vw;
+  font-size: 40px;
 }
 .item-wrap {
   margin-top: 6vh;
 }
 .item {
   background-color: rgba(255, 240, 255, 1);
-  @media screen and (max-width: 768px) {
-    width: 80vw;
-    height: 20vh;
-    border-radius: 20px;
-  }
-  @media screen and (max-width: 1300px) {
-    width: 50vw;
-    height: 20vw;
-    border-radius: 10px;
-  }
-  width: 20vw;
-  height: 12vh;
+  width: 320px;
+  height: 128px;
   border-radius: 3px;
   margin-top: 2vh;
   display: flex;
@@ -123,46 +116,27 @@ a {
   background-color: rgba(240, 160, 200, 1);
 }
 .title {
-  @media screen and (max-width: 768px) {
-    font-size: 6vw;
-    margin-left: 1rem;
-    margin-top: 1rem;
-  }
-  @media screen and (max-width: 1300px) {
-    font-size: 2.8vw;
-    margin-left: 1rem;
-    margin-top: 1vw;
-  }
   font-size: 1rem;
   margin: 0.4rem 0.4rem;
 }
+.date-wrap {
+
+}
 .date {
   text-align: right;
-  @media screen and (max-width: 400px) {
-    font-size: 3vw;
-  }
-  @media screen and (max-width: 1300px) {
-    font-size: 2vw;
-  }
   font-size: 0.8rem;
 }
 .tags, .category {
   text-align: left;
-  @media screen and (max-width: 400px) {
-    font-size: 3vw;
-    margin-left: 2vw;
-  }
-  @media screen and (max-width: 1300px) {
-    font-size: 2vw;
-  }
   font-size: 0.8rem
 }
 .side-menu-wrap {
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 768px) {
     width: 8vw;
     height: 8vw;
     margin-top: 1vw;
     margin-left: 1vw;
+    display: none;
   }
   position: fixed;
   width: 28vw;
@@ -170,7 +144,7 @@ a {
   left: 0;
 }
 .side-menu {
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 768px) {
     display: none; // スマホ用メニュー出来たら外す
   }
 }

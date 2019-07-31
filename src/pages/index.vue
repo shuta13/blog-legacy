@@ -115,8 +115,8 @@ a {
 }
 .item {
   background-color: rgba(255, 240, 255, 1);
-  width: 320px;
-  height: 128px;
+  width: 360px;
+  height: 142px;
   border-radius: 3px;
   margin-top: 2vh;
   display: flex;

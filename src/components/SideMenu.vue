@@ -64,7 +64,7 @@ a:hover {
   line-height: 3rem;
 }
 .category {
-  font-family: 'Cutive Mono';
+  font-family: 'Chakra Petch';
   font-size: 36px;
   margin-top: -10vh;
   margin-bottom: 20px;

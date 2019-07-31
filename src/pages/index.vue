@@ -106,6 +106,7 @@ a {
   font-size: 40px;
 }
 .meta-wrap {
+  font-family: 'Chakra Petch';
   display: flex;
   justify-content: center;
 }
@@ -122,11 +123,8 @@ a {
   justify-content: center;
   transition: background-color .8s;
 }
-// .item:hover {
-//   background-color: rgba(250, 170, 210, 1);
-// }
 .title {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin: 0.4rem 0.4rem;
 }
 .date-wrap {
@@ -147,6 +145,7 @@ a {
 }
 .tags, .category, .date {
   font-size: 0.8rem;
+  font-family: 'Cutive Mono';
   margin-top: 2px;
   margin-bottom: 2px;
   margin-left: 8px;

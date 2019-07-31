@@ -97,7 +97,7 @@ a:hover {
   color: rgba(160, 140, 180, 1);
 }
 img {
-  width: 400px;
+  width: 320px;
   height: auto;
 }
 </style>

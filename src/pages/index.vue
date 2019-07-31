@@ -122,9 +122,9 @@ a {
   justify-content: center;
   transition: background-color .8s;
 }
-.item:hover {
-  background-color: rgba(250, 170, 210, 1);
-}
+// .item:hover {
+//   background-color: rgba(250, 170, 210, 1);
+// }
 .title {
   font-size: 1rem;
   margin: 0.4rem 0.4rem;

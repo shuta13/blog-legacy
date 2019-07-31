@@ -28,19 +28,16 @@
 
     .side-menu-wrap
       side-menu.side-menu
-    app-blinder
 </template>
 
 <script lang="ts">
 import { Component, Provide, Vue } from 'nuxt-property-decorator'
-import AppBlinder from '~/components/AppBlinder.vue'
 import SideMenu from '~/components/SideMenu.vue'
 import _20190709PromareMovie from '../contents/json/2019-07-09-promare-movie.json'
 import _20190719AboutMe from '../contents/json/2019-07-19-about-me.json'
 
 @Component({
   components: {
-    AppBlinder,
     SideMenu
   }
 })

@@ -15,19 +15,16 @@
       .body(v-html="bodyHtml")
     .side-menu-wrap
       side-menu.side-menu
-    app-blinder
 </template>
 
 <script lang="ts">
 import { Component, Provide, Vue } from 'nuxt-property-decorator'
-import AppBlinder from '~/components/AppBlinder.vue'
 import SideMenu from '~/components/SideMenu.vue'
 import FireObject01 from '~/components/FireObject01.vue'
 import FireObject02 from '~/components/FireObject02.vue'
 
 @Component({
   components: {
-    AppBlinder,
     SideMenu,
     FireObject01,
     FireObject02,
@@ -150,12 +147,12 @@ img {
   padding-bottom: 2vh;
   background-color: rgba(255, 255, 255, .4);
   position: absolute;
-  width: 56vw;
+  width: 48vw;
   color: #000;
   font-size: 1rem;
   @media screen and (min-width: 768px) {
     right: 0;
-    margin-right: 12vw;
+    margin-right: 16vw;
   }
 }
 .title {

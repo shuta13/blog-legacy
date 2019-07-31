@@ -137,7 +137,7 @@ a:hover {
   align-items: center;
   padding: 1.2vh 1.2vw;
   font-size: 2rem;
-  background-color: rgba(160, 100, 160, .4);
+  background-color: rgba(240, 180, 210, 1);
 }
 .post-meta {
   @media screen and (max-width: 1000px) {

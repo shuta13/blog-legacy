@@ -70,6 +70,7 @@ a:hover {
   margin-bottom: 20px;
 }
 .item-wrap {
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.6));
   height: 40px;
   padding: 8px 8px;
   border-radius: 20px;

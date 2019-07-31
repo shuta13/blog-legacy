@@ -115,9 +115,10 @@ a {
   margin-top: 6vh;
 }
 .item {
-  background-color: rgba(255, 240, 255, 1);
-  width: 320px;
-  height: 128px;
+  background-color: rgba(255, 250, 255, 1);
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2));
+  width: 360px;
+  height: 142px;
   border-radius: 3px;
   margin-top: 2vh;
   display: flex;

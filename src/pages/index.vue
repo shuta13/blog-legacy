@@ -4,16 +4,16 @@
       .top-bar did0es.blog
     .item-wrap
       
-      a(href="/posts/2019-07-19-about-me")
+      a(href="/posts/2019-08-01-about-me")
         .item
-          .title {{ title_20190719AboutMe }}
+          .title {{ title_20190801AboutMe }}
           .meta-wrap
             .tags-wrap tag
-              .tags(v-for="tag in tags_20190719AboutMe" :key="tag") {{ tag }}
+              .tags(v-for="tag in tags_20190801AboutMe" :key="tag") {{ tag }}
             .category-wrap category
-              a(href="/posts/other").category {{ category_20190719AboutMe }}
+              a(href="/posts/other").category {{ category_20190801AboutMe }}
             .date-wrap date
-              .date 2019/07/19
+              .date 2019/08/01
 
       a(href="/posts/2019-07-09-promare-movie")
         .item
@@ -34,7 +34,7 @@
 import { Component, Provide, Vue } from 'nuxt-property-decorator'
 import SideMenu from '~/components/SideMenu.vue'
 import _20190709PromareMovie from '../contents/json/2019-07-09-promare-movie.json'
-import _20190719AboutMe from '../contents/json/2019-07-19-about-me.json'
+import _20190801AboutMe from '../contents/json/2019-08-01-about-me.json'
 
 @Component({
   components: {
@@ -49,9 +49,9 @@ class Home extends Vue {
   tags_20190709PromareMovie = _20190709PromareMovie.tags // eslint-disable-line
   category_20190709PromareMovie = _20190709PromareMovie.category // eslint-disable-line
 
-  title_20190719AboutMe = _20190719AboutMe.title // eslint-disable-line
-  tags_20190719AboutMe = _20190719AboutMe.tags // eslint-disable-line
-  category_20190719AboutMe = _20190719AboutMe.category // eslint-disable-line
+  title_20190801AboutMe = _20190801AboutMe.title // eslint-disable-line
+  tags_20190801AboutMe = _20190801AboutMe.tags // eslint-disable-line
+  category_20190801AboutMe = _20190801AboutMe.category // eslint-disable-line
 
   head () {
     return {

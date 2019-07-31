@@ -99,7 +99,7 @@ a:hover {
   width: 100vw;
   height: 100vh;
   position: fixed;
-  background-color: rgba(250, 250, 250, 1);
+  background-color: rgba(240, 240, 240, 1);
 }
 .bg-objects {
   position: fixed;

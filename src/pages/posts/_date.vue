@@ -126,7 +126,7 @@ a:hover {
 .side-menu {
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, .4);
 }
 .wrap {
   display: flex;

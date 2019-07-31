@@ -17,7 +17,6 @@
 
 <script lang="ts">
 import { Component, Provide, Vue } from 'nuxt-property-decorator'
-import sourceFileArray from '../../contents/json/contents.json'
 import AppBlinder from '~/components/AppBlinder.vue'
 import FireObject01 from '~/components/FireObject01.vue'
 import FireObject02 from '~/components/FireObject02.vue'
@@ -37,10 +36,6 @@ class Posts extends Vue {
   height = 0
   scrollY = 0
 
-  // validate({ params }) {
-  //   // @ts-ignore
-  //   return sourceFileArray.includes(`src/contents/${params.date}.md`);
-  // }
   asyncData ({ params }) {
     return Object.assign({}, require(`~/contents/json/${params.date}.json`), { params })
   }

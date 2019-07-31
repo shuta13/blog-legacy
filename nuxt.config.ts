@@ -1,4 +1,6 @@
 import NuxtConfiguration from '@nuxt/config'
+import path from 'path'
+import contents from './src/contents/json/contents.json'
 
 const config: NuxtConfiguration = {
   mode: 'universal',
@@ -39,10 +41,15 @@ const config: NuxtConfiguration = {
   },
   generate: {
     fallback: true,
-    routes: [
-      '/posts/2019-07-09-promare-movie',
-      '/posts/2019-07-19-about-me'
-    ]
+    routes() {
+      // '/posts/2019-07-09-promare-movie',
+      // '/posts/2019-07-19-about-me'
+      return Object.values(contents.fileMap)
+        .map(params => {
+          const { base, ext, category, tags } = params
+          return `/posts/${path.basename(base)}`
+        })
+    }
   }
 }
 export default config

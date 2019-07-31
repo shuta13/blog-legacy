@@ -91,7 +91,7 @@ a {
 .top-bar {
   font-family: 'Chakra Petch';
   @media screen and (max-width: 1000px) {
-    font-size: 4vw;
+    font-size: 72px;
   }
   font-size: 2.4vw;
 }

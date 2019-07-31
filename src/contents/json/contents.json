@@ -1,18 +1,5 @@
 {
   "fileMap": {
-    "src/contents/json/2019-07-19-about-me.json": {
-      "title": "名乗らずに話し始めることが多いです",
-      "created_at": "2019-07-19T00:00:00.000Z",
-      "tags": [
-        "about_me"
-      ],
-      "category": "other",
-      "dir": "src/contents/json",
-      "base": "2019-07-19-about-me.json",
-      "ext": ".json",
-      "sourceBase": "2019-07-19-about-me.md",
-      "sourceExt": ".md"
-    },
     "src/contents/json/2019-07-09-promare-movie.json": {
       "title": "プロメア見てきた",
       "created_at": "2019-07-09T00:00:00.000Z",
@@ -25,6 +12,19 @@
       "base": "2019-07-09-promare-movie.json",
       "ext": ".json",
       "sourceBase": "2019-07-09-promare-movie.md",
+      "sourceExt": ".md"
+    },
+    "src/contents/json/2019-07-19-about-me.json": {
+      "title": "名乗らずに話し始めることが多いです",
+      "created_at": "2019-07-19T00:00:00.000Z",
+      "tags": [
+        "about_me"
+      ],
+      "category": "other",
+      "dir": "src/contents/json",
+      "base": "2019-07-19-about-me.json",
+      "ext": ".json",
+      "sourceBase": "2019-07-19-about-me.md",
       "sourceExt": ".md"
     }
   },

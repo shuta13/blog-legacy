@@ -3,9 +3,14 @@
     .contents-wrap
       .menu-contents
         p.category CATEGORY
+
         a(href="/posts/other").item-wrap
           .item #other
           .number {{ numOther }}
+
+        a(href="/posts/develop").item-wrap
+          .item #develop
+          .number {{ numDevelop }}
 </template>
 
 <script lang="ts">
@@ -16,6 +21,7 @@ class SideMenu extends Vue {
   @Provide()
   categorys = {}
   numOther = 0
+  numDevelop = 0
 
   mounted() {
     this.categorys = Object.values(contents.fileMap)
@@ -27,6 +33,7 @@ class SideMenu extends Vue {
   countCategory() {
     for (let i = 0; i < Object.keys(this.categorys).length; i++) {
       if (this.categorys[i] === 'other') this.numOther++
+      if (this.categorys[i] === 'develop') this.numDevelop++
     }
   }
 }
@@ -73,6 +80,7 @@ a:hover {
   filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.6));
   height: 32px;
   padding: 8px 8px;
+  margin-top: 8px;
   border-radius: 20px;
   background-color: #fff;
   font-family: 'Cutive Mono';

@@ -1,7 +1,7 @@
 <template lang="pug">
   .container
     .bar-wrap
-      .top-bar did0es.blog
+      .top-bar #Develop
     .item-wrap
 
       a(href="#")
@@ -14,28 +14,6 @@
               a(href="/posts/develop").category.other {{ category_20190812 }}
             .date-wrap date
               .date 2019/08/12
-      
-      a(href="/posts/2019-08-01-about-me")
-        .item
-          .title {{ title_20190801 }}
-          .meta-wrap
-            .tags-wrap tag
-              .tags(v-for="tag in tags_20190801" :key="tag") {{ tag }}
-            .category-wrap category
-              a(href="/posts/other").category.other {{ category_20190801 }}
-            .date-wrap date
-              .date 2019/08/01
-
-      a(href="/posts/2019-07-09-promare-movie")
-        .item
-          .title {{ title_20190709 }}
-          .meta-wrap
-            .tags-wrap tag
-              .tags(v-for="tag in tags_20190709" :key="tag") {{ tag }}
-            .category-wrap category
-              a(href="/posts/other").category.other {{ category_20190709 }}
-            .date-wrap date
-              .date 2019/07/09
 
     .side-menu-wrap
       side-menu.side-menu
@@ -44,9 +22,6 @@
 <script lang="ts">
 import { Component, Provide, Vue } from 'nuxt-property-decorator'
 import SideMenu from '~/components/SideMenu.vue'
-
-import _20190709PromareMovie from '../contents/json/2019-07-09-promare-movie.json'
-import _20190801AboutMe from '../contents/json/2019-08-01-about-me.json'
 import _20190812NuxtLazyImage from '../contents/json/2019-08-12-nuxt-lazy-image.json'
 
 @Component({
@@ -54,47 +29,14 @@ import _20190812NuxtLazyImage from '../contents/json/2019-08-12-nuxt-lazy-image.
     SideMenu
   }
 })
-class Home extends Vue {
+class AppDevelop extends Vue {
   @Provide()
-
-  title_20190709 = _20190709PromareMovie.title // eslint-disable-line
-  tags_20190709 = _20190709PromareMovie.tags // eslint-disable-line
-  category_20190709 = _20190709PromareMovie.category // eslint-disable-line
-
-  title_20190801 = _20190801AboutMe.title // eslint-disable-line
-  tags_20190801 = _20190801AboutMe.tags // eslint-disable-line
-  category_20190801 = _20190801AboutMe.category // eslint-disable-line
-
   title_20190812 = _20190812NuxtLazyImage.title // eslint-disable-line
   tags_20190812 = _20190812NuxtLazyImage.tags // eslint-disable-line
   category_20190812 = _20190812NuxtLazyImage.category // eslint-disable-line
-
-  head () {
-    return {
-      title: 'home',
-      meta: [
-        { hid: 'description', property: 'description', content: '@did0esのブログ' },
-        { hid: 'og:description', property: 'og:description', content: '@did0esのブログ' },
-        { hid: 'og:type', property: 'og:type', content: 'website' },
-        { hid: 'og:url', property: 'og:url', content: 'https://blog.did0es.me' },
-        { hid: 'og:title', property: 'og:title', content: 'did0es.blog' },
-      ]
-    }
-  }
 }
-export default Home
+export default AppDevelop
 </script>
-
-<style>
-* {
-  padding: 0;
-  margin: 0;
-}
-html body {
-  width: 100vw;
-  font-size: 62.5%;
-}
-</style>
 
 <style lang="scss" scoped>
 .container {

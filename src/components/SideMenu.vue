@@ -71,7 +71,7 @@ a:hover {
 }
 .item-wrap {
   filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.6));
-  height: 40px;
+  height: 32px;
   padding: 8px 8px;
   border-radius: 20px;
   background-color: #fff;
@@ -86,17 +86,17 @@ a:hover {
   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.6));
 }
 .item {
-  font-size: 24px;
+  font-size: 18px;
   text-align: center;
   margin-right: 10px;
 }
 .number{
-  font-size: 20px;
+  font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 32px;
-  height: 32px;
+  width: 20px;
+  height: 20px;
   border: solid 1px rgba(0, 0, 0, .4);
   border-radius: 10px;
 }

@@ -3,26 +3,37 @@
     .bar-wrap
       .top-bar did0es.blog
     .item-wrap
+
+      a(href="/posts/2019-08-12-nuxt-lazy-image")
+        .item
+          .title {{ title_20190812 }}
+          .meta-wrap
+            .tags-wrap tag
+              .tags(v-for="tag in tags_20190812" :key="tag") {{ tag }}
+            .category-wrap category
+              a(href="/posts/other").category.other {{ category_20190812 }}
+            .date-wrap date
+              .date 2019/08/12
       
       a(href="/posts/2019-08-01-about-me")
         .item
-          .title {{ title_20190801AboutMe }}
+          .title {{ title_20190801 }}
           .meta-wrap
             .tags-wrap tag
-              .tags(v-for="tag in tags_20190801AboutMe" :key="tag") {{ tag }}
+              .tags(v-for="tag in tags_20190801" :key="tag") {{ tag }}
             .category-wrap category
-              a(href="/posts/other").category {{ category_20190801AboutMe }}
+              a(href="/posts/other").category.other {{ category_20190801 }}
             .date-wrap date
               .date 2019/08/01
 
-      a(href="/posts/2019-07-09-promare-movie")
+      a(href="#")
         .item
-          .title {{ title_20190709PromareMovie }}
+          .title {{ title_20190709 }}
           .meta-wrap
             .tags-wrap tag
-              .tags(v-for="tag in tags_20190709PromareMovie" :key="tag") {{ tag }}
+              .tags(v-for="tag in tags_20190709" :key="tag") {{ tag }}
             .category-wrap category
-              a(href="/posts/other").category {{ category_20190709PromareMovie }}
+              a(href="/posts/other").category.other {{ category_20190709 }}
             .date-wrap date
               .date 2019/07/09
 
@@ -33,8 +44,10 @@
 <script lang="ts">
 import { Component, Provide, Vue } from 'nuxt-property-decorator'
 import SideMenu from '~/components/SideMenu.vue'
+
 import _20190709PromareMovie from '../contents/json/2019-07-09-promare-movie.json'
 import _20190801AboutMe from '../contents/json/2019-08-01-about-me.json'
+import _20190812NuxtLazyImage from '../contents/json/2019-08-12-nuxt-lazy-image.json'
 
 @Component({
   components: {
@@ -43,15 +56,18 @@ import _20190801AboutMe from '../contents/json/2019-08-01-about-me.json'
 })
 class Home extends Vue {
   @Provide()
-  target = ''
 
-  title_20190709PromareMovie = _20190709PromareMovie.title // eslint-disable-line
-  tags_20190709PromareMovie = _20190709PromareMovie.tags // eslint-disable-line
-  category_20190709PromareMovie = _20190709PromareMovie.category // eslint-disable-line
+  title_20190709 = _20190709PromareMovie.title // eslint-disable-line
+  tags_20190709 = _20190709PromareMovie.tags // eslint-disable-line
+  category_20190709 = _20190709PromareMovie.category // eslint-disable-line
 
-  title_20190801AboutMe = _20190801AboutMe.title // eslint-disable-line
-  tags_20190801AboutMe = _20190801AboutMe.tags // eslint-disable-line
-  category_20190801AboutMe = _20190801AboutMe.category // eslint-disable-line
+  title_20190801 = _20190801AboutMe.title // eslint-disable-line
+  tags_20190801 = _20190801AboutMe.tags // eslint-disable-line
+  category_20190801 = _20190801AboutMe.category // eslint-disable-line
+
+  title_20190812 = _20190812NuxtLazyImage.title // eslint-disable-line
+  tags_20190812 = _20190812NuxtLazyImage.tags // eslint-disable-line
+  category_20190812 = _20190812NuxtLazyImage.category // eslint-disable-line
 
   head () {
     return {
@@ -145,7 +161,7 @@ a {
   width: 90px;
 }
 .tags, .category, .date {
-  font-size: 0.8rem;
+  font-size: 100%;
   font-family: 'Cutive Mono';
   margin-top: 2px;
   margin-bottom: 2px;
@@ -157,16 +173,17 @@ a {
   align-items: center;
   text-align: center;
   width: 64px;
+  height: auto;
   padding: 2px 2px;
 }
 .tags {
   background-color: #fff;
 }
-.category {
+.other {
   background-color: rgba(160, 160, 160, 1);
   transition: background-color .4s;
 }
-.category:hover {
+.other:hover {
   background-color: rgba(220, 220, 220, 1);
 }
 .date {

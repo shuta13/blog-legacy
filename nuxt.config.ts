@@ -34,7 +34,7 @@ const config: NuxtConfiguration = {
   },
   css: [
     '@fortawesome/fontawesome-svg-core/styles.css',
-    'highlight.js/styles/hopscotch.css'
+    'highlight.js/styles/qtcreator_dark.css'
   ],
   plugins: [
     { src: '~plugins/font-awesome', ssr: false }

@@ -42,6 +42,12 @@ const config: NuxtConfiguration = {
   build: {
     cache: true
   },
+  modules: [
+    '@nuxtjs/google-analytics'
+  ],
+  googleAnalytics: {
+    id: 'UA-145474468-1'
+  },
   generate: {
     fallback: true,
     routes() {

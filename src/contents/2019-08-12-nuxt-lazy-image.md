@@ -3,8 +3,7 @@ title: Nuxt + v-lazy-imageで楽に画像遅延読み込み
 created_at: 2019-08-12
 tags: 
  - web
- - vue
- - nuxt
+ - vue/nuxt
  - plugin
 category: develop
 ---

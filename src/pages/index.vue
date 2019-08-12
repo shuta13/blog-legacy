@@ -4,7 +4,7 @@
       .top-bar did0es.blog
     .item-wrap
 
-      a(href="/posts/2019-08-12-nuxt-lazy-image")
+      a(href="#")
         .item
           .title {{ title_20190812 }}
           .meta-wrap

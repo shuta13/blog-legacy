@@ -17,6 +17,10 @@ html {
   box-sizing: border-box;
 }
 
+* {
+  color: rgb(60, 20, 20);
+}
+
 *,
 *:before,
 *:after {

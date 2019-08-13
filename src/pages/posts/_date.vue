@@ -85,9 +85,8 @@ export default Posts
 </script>
 
 <style>
-@import '~/assets/tomorrow-night-bright.css';
 a {
-  color: rgba(100, 90, 140, 1);
+  color: rgb(120, 40, 40);
   transition: color .2s;
 }
 a:hover {
@@ -149,7 +148,6 @@ img {
   background-color: rgba(255, 255, 255, .4);
   position: absolute;
   width: 48vw;
-  color: #000;
   font-size: 1rem;
   @media screen and (min-width: 768px) {
     right: 0;

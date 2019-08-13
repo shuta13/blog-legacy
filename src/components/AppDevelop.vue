@@ -34,6 +34,19 @@ class AppDevelop extends Vue {
   title_20190812 = _20190812NuxtLazyImage.title // eslint-disable-line
   tags_20190812 = _20190812NuxtLazyImage.tags // eslint-disable-line
   category_20190812 = _20190812NuxtLazyImage.category // eslint-disable-line
+
+  head () {
+    return {
+      title: 'develop',
+      meta: [
+        { hid: 'description', property: 'description', content: '@did0esのブログ' },
+        { hid: 'og:description', property: 'og:description', content: '@did0esのブログ' },
+        { hid: 'og:type', property: 'og:type', content: 'website' },
+        { hid: 'og:url', property: 'og:url', content: 'https://blog.did0es.me' },
+        { hid: 'og:title', property: 'og:title', content: 'did0es.blog' },
+      ]
+    }
+  }
 }
 export default AppDevelop
 </script>

@@ -46,7 +46,7 @@ import _20190801AboutMe from '../contents/json/2019-08-01-about-me.json'
     SideMenu
   }
 })
-class Home extends Vue {
+class AppOther extends Vue {
   @Provide()
   target = ''
 
@@ -60,7 +60,7 @@ class Home extends Vue {
 
   head () {
     return {
-      title: 'home',
+      title: 'other',
       meta: [
         { hid: 'description', property: 'description', content: '@did0esのブログ' },
         { hid: 'og:description', property: 'og:description', content: '@did0esのブログ' },
@@ -71,7 +71,7 @@ class Home extends Vue {
     }
   }
 }
-export default Home
+export default AppOther
 </script>
 
 <style>

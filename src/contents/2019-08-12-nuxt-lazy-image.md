@@ -1,8 +1,7 @@
 ---
 title: Nuxt + v-lazy-imageで楽に画像遅延読み込み
 created_at: 2019-08-12
-tags: 
- - web
+tags:
  - vue/nuxt
  - plugin
 category: develop
@@ -22,7 +21,7 @@ category: develop
 
 <br>
 
-なんか、<a target="_blank" href="">vue-lazyload</a>を勧めてくる方もいるんですが、僕はこっちの方がよりシンプルでわかりやすかったので `v-lazy-image` を使っています
+なんか、<a target="_blank" href="https://github.com/hilongjw/vue-lazyload">vue-lazyload</a>を勧めてくる方もいるんですが、僕はこっちの方がよりシンプルでわかりやすかったので `v-lazy-image` を使っています
 
 <br>
 

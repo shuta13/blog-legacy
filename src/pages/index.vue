@@ -11,7 +11,7 @@
             .tags-wrap tag
               .tags(v-for="tag in tags_20190812" :key="tag") {{ tag }}
             .category-wrap category
-              a(href="/posts/develop").category.other {{ category_20190812 }}
+              a(href="/posts/develop").category.develop {{ category_20190812 }}
             .date-wrap date
               .date 2019/08/12
       
@@ -185,6 +185,13 @@ a {
 }
 .other:hover {
   background-color: rgba(220, 220, 220, 1);
+}
+.develop {
+  background-color: rgba(120, 200, 120, 1);
+  transition: background-color .4s;
+}
+.develop:hover {
+  background-color: rgba(180, 220, 180, 1);
 }
 .date {
   width: 80px;

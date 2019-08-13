@@ -4,11 +4,11 @@
       .menu-contents
         p.category CATEGORY
 
-        a(href="/posts/other").item-wrap
+        a(href="/posts/other").item-wrap.other
           .item #other
           .number {{ numOther }}
 
-        a(href="/posts/develop").item-wrap
+        a(href="/posts/develop").item-wrap.develop
           .item #develop
           .number {{ numDevelop }}
 </template>
@@ -82,7 +82,6 @@ a:hover {
   padding: 8px 8px;
   margin-top: 8px;
   border-radius: 20px;
-  background-color: #fff;
   font-family: 'Cutive Mono';
   text-align: center;
   display: flex;
@@ -107,5 +106,11 @@ a:hover {
   height: 20px;
   border: solid 1px rgba(0, 0, 0, .4);
   border-radius: 10px;
+}
+.other {
+  background-color: rgba(220, 220, 220, 1);
+}
+.develop {
+  background-color: rgba(180, 220, 180, 1);
 }
 </style>

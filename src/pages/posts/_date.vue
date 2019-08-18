@@ -90,7 +90,7 @@ a {
   transition: color .2s;
 }
 a:hover {
-  color: rgba(160, 140, 180, 1);
+  color: rgb(209, 168, 175);
 }
 img {
   width: 28vw;
@@ -166,7 +166,7 @@ img {
   align-items: center;
   padding: 1.2vh 1.2vw;
   font-size: 1.6rem;
-  background-color: rgba(160, 150, 180, .8);
+  background-color: rgba(206, 153, 163, 0.8);
 }
 .post-meta {
   @media screen and (max-width: 768px) {

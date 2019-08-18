@@ -51,7 +51,7 @@ a:hover {
 .side-menu {
   width: 24vw;
   height: 100vh;
-  background-color: rgba(195, 190, 210, .8);
+  background-color: rgba(206, 153, 163, 0.8);
   display: flex;
 }
 .contents-wrap {

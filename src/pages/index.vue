@@ -128,10 +128,6 @@ a {
 .date-wrap {
   text-align: right;
 }
-.date {
-  width: 72px;
-  font-size: 0.8rem;
-}
 .tags-wrap, .category-wrap, .date-wrap {
   width: 80px;
   text-align: center;
@@ -175,7 +171,7 @@ a {
   background-color: rgba(180, 220, 180, 1);
 }
 .date {
-  width: 80px;
+  width: 90px;
 }
 .side-menu-wrap {
   @media screen and (max-width: 768px) {

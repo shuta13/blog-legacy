@@ -2,40 +2,19 @@
   .container
     .bar-wrap
       .top-bar did0es.blog
+
     .item-wrap
-
-      a(href="/posts/2019-08-12-nuxt-lazy-image")
-        .item
-          .title {{ title_20190812 }}
-          .meta-wrap
-            .tags-wrap tag
-              .tags(v-for="tag in tags_20190812" :key="tag") {{ tag }}
-            .category-wrap category
-              a(href="/posts/develop").category.develop {{ category_20190812 }}
-            .date-wrap date
-              .date 2019/08/12
-      
-      a(href="/posts/2019-08-01-about-me")
-        .item
-          .title {{ title_20190801 }}
-          .meta-wrap
-            .tags-wrap tag
-              .tags(v-for="tag in tags_20190801" :key="tag") {{ tag }}
-            .category-wrap category
-              a(href="/posts/other").category.other {{ category_20190801 }}
-            .date-wrap date
-              .date 2019/08/01
-
-      a(href="/posts/2019-07-09-promare-movie")
-        .item
-          .title {{ title_20190709 }}
-          .meta-wrap
-            .tags-wrap tag
-              .tags(v-for="tag in tags_20190709" :key="tag") {{ tag }}
-            .category-wrap category
-              a(href="/posts/other").category.other {{ category_20190709 }}
-            .date-wrap date
-              .date 2019/07/09
+      div(v-for="data in fileData" :key="data")
+        a(:href="`/posts/${data[1].base.split(/.json/)[0]}`")
+          .item
+            .title {{ data[1].title }}
+            .meta-wrap
+              .tags-wrap tag
+                .tags(v-for="tag in data[1].tags") {{ tag }}
+              .category-wrap category
+                a(href="/posts/develop").category.develop {{ data[1].category }}
+              .date-wrap date
+                .date {{ data[1].created_at.split(/T/)[0] }}
 
     .side-menu-wrap
       side-menu.side-menu
@@ -44,6 +23,8 @@
 <script lang="ts">
 import { Component, Provide, Vue } from 'nuxt-property-decorator'
 import SideMenu from '~/components/SideMenu.vue'
+
+import contents from '../contents/json/contents.json'
 
 import _20190709PromareMovie from '../contents/json/2019-07-09-promare-movie.json'
 import _20190801AboutMe from '../contents/json/2019-08-01-about-me.json'
@@ -56,18 +37,8 @@ import _20190812NuxtLazyImage from '../contents/json/2019-08-12-nuxt-lazy-image.
 })
 class Home extends Vue {
   @Provide()
-
-  title_20190709 = _20190709PromareMovie.title // eslint-disable-line
-  tags_20190709 = _20190709PromareMovie.tags // eslint-disable-line
-  category_20190709 = _20190709PromareMovie.category // eslint-disable-line
-
-  title_20190801 = _20190801AboutMe.title // eslint-disable-line
-  tags_20190801 = _20190801AboutMe.tags // eslint-disable-line
-  category_20190801 = _20190801AboutMe.category // eslint-disable-line
-
-  title_20190812 = _20190812NuxtLazyImage.title // eslint-disable-line
-  tags_20190812 = _20190812NuxtLazyImage.tags // eslint-disable-line
-  category_20190812 = _20190812NuxtLazyImage.category // eslint-disable-line
+  files = contents.fileMap
+  fileData: Array<{}> | null = null
 
   head () {
     return {
@@ -80,6 +51,14 @@ class Home extends Vue {
         { hid: 'og:title', property: 'og:title', content: 'did0es.blog' },
       ]
     }
+  }
+
+  mounted() {
+    this.setFileContents()
+  }
+
+  setFileContents() {
+    this.fileData = Object.entries(this.files)
   }
 }
 export default Home
@@ -110,8 +89,7 @@ a {
   position: absolute;
   width: 100vw;
   height: 10vh;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 .top-bar {
   font-family: 'Chakra Petch';
@@ -123,7 +101,10 @@ a {
   justify-content: center;
 }
 .item-wrap {
-  margin-top: 6vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 4vh;
 }
 .item {
   background-color: rgb(247, 244, 245);

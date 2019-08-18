@@ -156,20 +156,20 @@ a {
 .tags {
   background-color: #fff;
 }
-.other {
-  background-color: rgba(160, 160, 160, 1);
-  transition: background-color .4s;
-}
-.other:hover {
-  background-color: rgba(220, 220, 220, 1);
-}
-.develop {
-  background-color: rgba(120, 200, 120, 1);
-  transition: background-color .4s;
-}
-.develop:hover {
-  background-color: rgba(180, 220, 180, 1);
-}
+// .other {
+//   background-color: rgba(160, 160, 160, 1);
+//   transition: background-color .4s;
+// }
+// .other:hover {
+//   background-color: rgba(220, 220, 220, 1);
+// }
+// .develop {
+//   background-color: rgba(120, 200, 120, 1);
+//   transition: background-color .4s;
+// }
+// .develop:hover {
+//   background-color: rgba(180, 220, 180, 1);
+// }
 .date {
   width: 90px;
 }

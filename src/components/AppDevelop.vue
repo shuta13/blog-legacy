@@ -134,13 +134,13 @@ a {
 .tags {
   background-color: #fff;
 }
-.develop {
-  background-color: rgba(120, 200, 120, 1);
-  transition: background-color .4s;
-}
-.develop:hover {
-  background-color: rgba(180, 220, 180, 1);
-}
+// .develop {
+//   background-color: rgba(120, 200, 120, 1);
+//   transition: background-color .4s;
+// }
+// .develop:hover {
+//   background-color: rgba(180, 220, 180, 1);
+// }
 .date {
   width: 80px;
 }

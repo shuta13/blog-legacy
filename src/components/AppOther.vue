@@ -167,13 +167,13 @@ a {
 .tags {
   background-color: #fff;
 }
-.category {
-  background-color: rgba(160, 160, 160, 1);
-  transition: background-color .4s;
-}
-.category:hover {
-  background-color: rgba(220, 220, 220, 1);
-}
+// .category {
+//   background-color: rgba(160, 160, 160, 1);
+//   transition: background-color .4s;
+// }
+// .category:hover {
+//   background-color: rgba(220, 220, 220, 1);
+// }
 .date {
   width: 80px;
 }

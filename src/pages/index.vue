@@ -104,7 +104,7 @@ a {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-top: 4vh;
+  margin-top: 6vh;
 }
 .item {
   background-color: rgb(247, 244, 245);

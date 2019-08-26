@@ -149,9 +149,6 @@ a {
   height: auto;
   padding: 2px 2px;
 }
-.tags {
-  background-color: #fff;
-}
 .date {
   width: 90px;
 }

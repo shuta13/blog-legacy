@@ -5,14 +5,14 @@
 
     .item-wrap
       div(v-for="data in fileData" :key="data")
-        a(:href="`/posts/archives/${data[1].base.split(/.json/)[0]}`")
+        a(:href="`/posts/${data[1].base.split(/.json/)[0]}`")
           .item
             .title {{ data[1].title }}
             .meta-wrap
               .tags-wrap tag
                 .tags(v-for="tag in data[1].tags") {{ tag }}
               .category-wrap category
-                a(:href="`/posts/archives/${data[1].category}`").category.develop {{ data[1].category }}
+                a(:href="`/posts/${data[1].category}`").category.develop {{ data[1].category }}
               .date-wrap date
                 .date {{ data[1].created_at.split(/T/)[0] }}
 

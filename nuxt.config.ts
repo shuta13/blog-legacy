@@ -51,12 +51,15 @@ const config: NuxtConfiguration = {
   generate: {
     fallback: true,
     routes() {
-      // '/posts/2019-07-09-promare-movie',
-      // '/posts/2019-07-19-about-me'
       return Object.values(contents.fileMap)
         .map(params => {
           const { base, ext } = params
           return `posts/${path.basename(base, ext)}`
+      }),
+      Object.values(contents.fileMap)
+        .map(params => {
+          const { category } = params
+          return `posts/archives/${path.basename(category)}`
       })
     }
   }

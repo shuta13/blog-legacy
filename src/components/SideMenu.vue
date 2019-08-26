@@ -4,11 +4,11 @@
       .menu-contents
         p.category CATEGORY
 
-        a(href="/posts/other").item-wrap.other
+        a(href="/posts/archives/other").item-wrap.other
           .item #other
           .number {{ numOther }}
 
-        a(href="/posts/develop").item-wrap.develop
+        a(href="/posts/archives/develop").item-wrap.develop
           .item #develop
           .number {{ numDevelop }}
 </template>

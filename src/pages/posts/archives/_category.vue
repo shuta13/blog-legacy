@@ -1,10 +1,10 @@
 <template lang="pug">
   .container
     .bar-wrap
-      .top-bar did0es.blog
+      .top-bar # {{ path }}
 
     .item-wrap
-      div(v-for="data in fileData" :key="data")
+      div(v-for="data in fileData" :key="data" v-if="path===data[1].category")
         a(:href="`/posts/${data[1].base.split(/.json/)[0]}`")
           .item
             .title {{ data[1].title }}
@@ -24,7 +24,7 @@
 import { Component, Provide, Vue } from 'nuxt-property-decorator'
 import SideMenu from '~/components/SideMenu.vue'
 
-import contents from '../contents/json/contents.json'
+import contents from '../../../contents/json/contents.json'
 
 @Component({
   components: {
@@ -35,10 +35,11 @@ class Home extends Vue {
   @Provide()
   files = contents.fileMap
   fileData: Array<{}> | null = null
+  path = ''
 
   head () {
     return {
-      title: 'home',
+      title: `${this.$route.path.split(/\//)[3]}`,
       meta: [
         { hid: 'description', property: 'description', content: '@did0esのブログ' },
         { hid: 'og:description', property: 'og:description', content: '@did0esのブログ' },
@@ -51,6 +52,7 @@ class Home extends Vue {
 
   mounted() {
     this.setFileContents()
+    this.path = this.$route.path.split(/\//)[3]
   }
 
   setFileContents() {

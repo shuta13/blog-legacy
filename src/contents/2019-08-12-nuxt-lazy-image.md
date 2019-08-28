@@ -39,11 +39,11 @@ yarn add v-lazy-image
 
 <br>
 
->>> POINT 👉 *みんな yarn 使っとる、npm なんか使っとるの、お前だけ*
+> POINT 👉 みんな yarn 使っとる、npm なんか使っとるの、お前だけ
 
 <br>
 
-2. **下ごしらえ**
+1. **下ごしらえ**
 
 <a target="_blank" href="https://github.com/alexjoverm/v-lazy-image/blob/master/README.md">公式のREADME</a> 見ればわかるんですが一応。
 

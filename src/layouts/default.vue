@@ -15,11 +15,11 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-  color: rgb(60, 20, 20);
+  color: rgba(80, 40, 40, 1);
 }
 
 .markdown-body {
-  color: rgb(60, 20, 20);
+  color: rgba(80, 40, 40, 1);
 }
 
 .markdown-body a {

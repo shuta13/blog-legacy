@@ -51,10 +51,10 @@ export default SideMenu
 <style lang="scss" scoped>
 a {
   text-decoration: none;
-  color: rgba(0, 0, 0, 1);
+  color: rgba(80, 40, 40, 1);
 }
 a:hover {
-  color: rgba(0, 0, 0, 1);
+  color: rgb(114, 63, 63);
 }
 .side-menu {
   width: 24vw;

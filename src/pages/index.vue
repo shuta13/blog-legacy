@@ -7,7 +7,8 @@
       div(v-for="data in fileData" :key="data")
         a(:href="`/posts/${data[1].base.split(/.json/)[0]}`")
           .item
-            .title {{ data[1].title }}
+            .title-wrap
+              .title {{ data[1].title }}
             .meta-wrap
               .tags-wrap tag
                 .tags(v-for="tag in data[1].tags") {{ tag }}
@@ -79,7 +80,7 @@ html body {
 }
 a {
   text-decoration: none;
-  color: #000;
+  color: rgba(80, 40, 40, 1);
 }
 .bar-wrap {
   position: absolute;
@@ -116,10 +117,18 @@ a {
 .item:hover {
   filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.2));
 }
+.title-wrap {
+  width: 100%;
+  height: auto;
+  background-color: rgba(230, 148, 163, 0.8);
+  margin-bottom: 10px;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.2));
+}
 .title {
   left: 0;
   width: 100%;
-  font-size: 1.2rem;
+  font-size: 16px;
+  text-align: center;
 }
 .date-wrap {
   text-align: right;

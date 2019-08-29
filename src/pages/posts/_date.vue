@@ -12,7 +12,7 @@
       .title {{ title }}
       .post-meta
         time {{ params.date }}
-      .body(v-html="bodyHtml")
+      .markdown-body(v-html="bodyHtml")
     .side-menu-wrap
       side-menu.side-menu
 </template>
@@ -85,13 +85,6 @@ export default Posts
 </script>
 
 <style>
-a {
-  color: rgb(120, 40, 40);
-  transition: color .2s;
-}
-a:hover {
-  color: rgb(209, 168, 175);
-}
 img {
   width: 28vw;
   min-width: 300px;
@@ -182,7 +175,7 @@ img {
   @media screen and (max-width: 768px) {
     line-height: 1.8rem;
   }
-  line-height: 2rem;
+  line-height: 40px;
 }
 .fire1-enter-active, .fire1-leave-active,
 .fire2-enter-active, .fire2-leave-active {

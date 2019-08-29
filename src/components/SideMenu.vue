@@ -4,6 +4,10 @@
       .menu-contents
         p.category CATEGORY
 
+        a(href="/posts/archives/diary").item-wrap.diary
+          .item #diary
+          .number {{ numDiary }}
+
         a(href="/posts/archives/other").item-wrap.other
           .item #other
           .number {{ numOther }}
@@ -11,6 +15,7 @@
         a(href="/posts/archives/develop").item-wrap.develop
           .item #develop
           .number {{ numDevelop }}
+
 </template>
 
 <script lang="ts">
@@ -20,6 +25,8 @@ import contents from '../contents/json/contents.json'
 class SideMenu extends Vue {
   @Provide()
   categorys = {}
+
+  numDiary = 0
   numOther = 0
   numDevelop = 0
 
@@ -32,6 +39,7 @@ class SideMenu extends Vue {
   }
   countCategory() {
     for (let i = 0; i < Object.keys(this.categorys).length; i++) {
+      if (this.categorys[i] === 'diary') this.numDiary++
       if (this.categorys[i] === 'other') this.numOther++
       if (this.categorys[i] === 'develop') this.numDevelop++
     }
@@ -97,7 +105,7 @@ a:hover {
   text-align: center;
   margin-right: 10px;
 }
-.number{
+.number {
   font-size: 18px;
   display: flex;
   justify-content: center;
@@ -112,5 +120,8 @@ a:hover {
 }
 .develop {
   background-color: rgba(180, 220, 180, 1);
+}
+.diary {
+  background-color: rgb(169, 183, 212);
 }
 </style>

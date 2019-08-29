@@ -1,5 +1,19 @@
 {
   "fileMap": {
+    "src/contents/json/2019-07-09-promare-movie.json": {
+      "title": "プロメア見てきた",
+      "created_at": "2019-07-09T00:00:00.000Z",
+      "tags": [
+        "movie",
+        "anime"
+      ],
+      "category": "diary",
+      "dir": "src/contents/json",
+      "base": "2019-07-09-promare-movie.json",
+      "ext": ".json",
+      "sourceBase": "2019-07-09-promare-movie.md",
+      "sourceExt": ".md"
+    },
     "src/contents/json/2019-08-12-nuxt-lazy-image.json": {
       "title": "Nuxt + v-lazy-imageで楽に画像遅延読み込み",
       "created_at": "2019-08-12T00:00:00.000Z",
@@ -25,20 +39,6 @@
       "base": "2019-08-01-about-me.json",
       "ext": ".json",
       "sourceBase": "2019-08-01-about-me.md",
-      "sourceExt": ".md"
-    },
-    "src/contents/json/2019-07-09-promare-movie.json": {
-      "title": "プロメア見てきた",
-      "created_at": "2019-07-09T00:00:00.000Z",
-      "tags": [
-        "movie",
-        "anime"
-      ],
-      "category": "other",
-      "dir": "src/contents/json",
-      "base": "2019-07-09-promare-movie.json",
-      "ext": ".json",
-      "sourceBase": "2019-07-09-promare-movie.md",
       "sourceExt": ".md"
     }
   },

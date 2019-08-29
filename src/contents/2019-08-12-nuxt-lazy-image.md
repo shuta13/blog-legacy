@@ -11,11 +11,13 @@ category: develop
 
 <br>
 
-## v-lazy-image
+## v-lazy-image 
 
 <br>
 
-> 👉 <a target="_blank" href="https://github.com/alexjoverm/v-lazy-image">github</a>
+> 👉<a target="_blank" href="https://github.com/alexjoverm/v-lazy-image">github</a>
+
+<br>
 
 > 👉 <a target="_blank" href="https://www.npmjs.com/package/v-lazy-image">npm</a>
 
@@ -25,7 +27,7 @@ category: develop
 
 <br>
 
-＊＊＊
+---
 
 <br>
 
@@ -39,7 +41,7 @@ yarn add v-lazy-image
 
 <br>
 
-> POINT 👉 みんな yarn 使っとる、npm なんか使っとるの、お前だけ
+>POINT 👉 みんな yarn 使っとる、npm なんか使っとるの、お前だけ
 
 <br>
 

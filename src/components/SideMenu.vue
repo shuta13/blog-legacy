@@ -4,15 +4,15 @@
       .menu-contents
         p.category CATEGORY
 
-        a(href="/posts/archives/diary").item-wrap.diary
+        nuxt-link(to="/posts/archives/diary").item-wrap.diary
           .item #diary
           .number {{ numDiary }}
 
-        a(href="/posts/archives/other").item-wrap.other
+        nuxt-link(to="/posts/archives/other").item-wrap.other
           .item #other
           .number {{ numOther }}
 
-        a(href="/posts/archives/develop").item-wrap.develop
+        nuxt-link(to="/posts/archives/develop").item-wrap.develop
           .item #develop
           .number {{ numDevelop }}
 

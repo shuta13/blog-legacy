@@ -4,7 +4,7 @@
       .top-bar did0es.blog
     
       .share-button-wrap
-        <a href="https://twitter.com/share?url=https%3A%2F%2Fblog.did0es.me&via=did0es&text=did0es.blog%20-%20blog.did0es.me" target="_blank"><FontAwesomeIcon :icon="twitter" class="icon twitter"></FontAwesomeIcon></a>
+        <a href="https://twitter.com/share?url=https%3A%2F%2Fblog.did0es.me&via=did0es&text=did0esのblog" target="_blank"><FontAwesomeIcon :icon="twitter" class="icon twitter"></FontAwesomeIcon></a>
         <div data-href="https://blog.did0es.me/" data-layout="button_count" data-size="small" data-lang="en"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog.did0es.me%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"><FontAwesomeIcon :icon="facebook" class="icon facebook"></FontAwesomeIcon></a></div>
         <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https://blog.did0es.me&title=did0es.blog%20-%20blog.did0es.me" target="_blank" rel="nofollow"><img src="~/assets/svg/hatenabookmark-logomark.svg" class="icon" style="width: 38px; height: 38px;"></a>
 

@@ -150,7 +150,7 @@ Generative Artをする前の最初で最後の忠告なんですが、 **なん
 
 ワークショップに入る前に、僕がGenerative Artをはじめた話をちょっとだけします。隙あらば自分語りしたい病気なので許して下さい
 
-何回も挙げまくってる 例のジェネラティブアートの本 やその他の本や記事でも度々<a href="https://processing.org/" target="_blank">Processing</a>という言語が使用されています。
+何回も挙げまくってる <a href="https://www.amazon.co.jp/%E6%99%AE%E5%8F%8A%E7%89%88-%E3%82%B8%E3%82%A7%E3%83%8D%E3%83%A9%E3%83%86%E3%82%A3%E3%83%96%E3%83%BB%E3%82%A2%E3%83%BC%E3%83%88%E2%80%95Processing%E3%81%AB%E3%82%88%E3%82%8B%E5%AE%9F%E8%B7%B5%E3%82%AC%E3%82%A4%E3%83%89-%E3%83%9E%E3%83%83%E3%83%88%E3%83%BB%E3%83%94%E3%82%A2%E3%82%BD%E3%83%B3/dp/4861009634/ref=sr_1_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&keywords=%E3%83%9E%E3%83%83%E3%83%88%E3%83%94%E3%82%A2%E3%82%BD%E3%83%B3&qid=1567185191&s=gateway&sr=8-1" target="_blank">例のジェネラティブアートの本</a> やその他の本や記事でも度々<a href="https://processing.org/" target="_blank">Processing</a>という言語が使用されています。
 
 僕の通う大学ではプログラミング入門にこの言語が使用されています。
 
@@ -162,7 +162,7 @@ Generative Artをする前の最初で最後の忠告なんですが、 **なん
 
 こんな感じでGenerative Artに没頭し毎日溶かしていました
 
-また、作った作品を公開するためにWeb回りも手をつけ始め、おまんまを食べられるぐらいまでにはなりました。よかった〜
+また、作った作品を公開するためにWeb回りも手をつけ始め、おまんまを食べられるぐらいにはなりました。
 
 こちらがそういう感じで作ったWebです、ちらほらProcessingでのGenerative Art作品があります → <a href="https://did0es.me/garelly" target="_blank">GARELLY</a>
 

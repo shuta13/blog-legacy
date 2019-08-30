@@ -116,7 +116,7 @@ img {
   height: 42px;
 }
 .twitter {
-  color: rgb(30, 164, 247);
+  color: rgb(25, 146, 221);
 }
 .facebook {
   color: rgb(57, 84, 153);

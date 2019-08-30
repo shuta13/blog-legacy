@@ -14,7 +14,7 @@ category: develop
 
 こんにちは、shuta(did0es) です
 
-何の罪滅ぼしかと言うと、まず僕はRCC( <a href="http://www.rcc.ritsumei.ac.jp/" target="_blank">RCC</a> )という団体(まあ大学のサークルみたいなもんです)に所属しています。
+何の罪滅ぼしかと言うと、まず僕は<a href="http://www.rcc.ritsumei.ac.jp/" target="_blank">RCC</a>という団体(まあ大学のサークルみたいなもんです)に所属しています。
 
 そこでは「夏期勉強会」という、有志が色々情報系(別に作曲とかイラスト制作みたいな感じで多岐にわたります)のことを夏季休業期間に教えるイベントがあります。普通のコミュニティや社内の勉強会みたいなものです
 
@@ -30,7 +30,7 @@ category: develop
 
 ## 内容の要約
 
-これは「Creative Coding(Generative Art)」についての僕の知見を共有するために催す予定だった内容を記事として記しています。
+これは「Creative Coding(Generative Art)」についての僕の考えや全く知らない人が入門するために催す予定だった内容を記事として記しています。
 
 Creative Codingと銘打ちつつも内容はほぼ全部「Generative Art」の話です。Generative Artとは何か全くわからない人向けにちょっとしたワークショップのような形でGenerative Artについてのお話しをします
 

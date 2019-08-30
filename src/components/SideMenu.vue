@@ -2,6 +2,13 @@
   .side-menu
     .contents-wrap
       .menu-contents
+        .share-button-wrap
+          <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="did0es.blog - blog.did0es.me @did0es" data-related="" data-lang="en" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+          <div class="fb-share-button" data-href="https://blog.did0es.me/" data-layout="button_count" data-size="small" data-lang="en"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog.did0es.me%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">シェア</a></div>
+
+          <a href="https://b.hatena.ne.jp/entry/s/blog.did0es.me/" class="hatena-bookmark-button" data-hatena-bookmark-layout="basic-label" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/v4/public/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+
         p.category CATEGORY
 
         nuxt-link(to="/posts/archives/diary").item-wrap.diary
@@ -15,7 +22,9 @@
         nuxt-link(to="/posts/archives/develop").item-wrap.develop
           .item #develop
           .number {{ numDevelop }}
-
+    
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v4.0"></script>
 </template>
 
 <script lang="ts">
@@ -30,18 +39,18 @@ class SideMenu extends Vue {
   numOther = 0
   numDevelop = 0
 
-  mounted() {
+  mounted () {
     this.categorys = Object.values(contents.fileMap)
-      .map(params => {
+      .map((params) => {
         return params.category
       })
     this.countCategory()
   }
-  countCategory() {
+  countCategory () {
     for (let i = 0; i < Object.keys(this.categorys).length; i++) {
-      if (this.categorys[i] === 'diary') this.numDiary++
-      if (this.categorys[i] === 'other') this.numOther++
-      if (this.categorys[i] === 'develop') this.numDevelop++
+      if (this.categorys[i] === 'diary') { this.numDiary++ }
+      if (this.categorys[i] === 'other') { this.numOther++ }
+      if (this.categorys[i] === 'develop') { this.numDevelop++ }
     }
   }
 }
@@ -76,13 +85,17 @@ a:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  line-height: 3rem;
+  // line-height: 3rem;
+}
+.share-button-wrap {
+  display: flex;
+  margin-bottom: 10px;
 }
 .category {
   font-family: 'Chakra Petch';
   font-size: 36px;
-  margin-top: -10vh;
-  margin-bottom: 20px;
+  // margin-top: -10vh;
+  // margin-bottom: 20px;
 }
 .item-wrap {
   filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.6));

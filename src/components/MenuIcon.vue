@@ -6,10 +6,9 @@
 </template>
 
 <script lang="ts">
-import { Component, Provide, Vue } from 'nuxt-property-decorator'
+import { Component, Vue } from 'nuxt-property-decorator'
 @Component
-class MenuIcon extends Vue {
-}
+class MenuIcon extends Vue {}
 export default MenuIcon
 </script>
 

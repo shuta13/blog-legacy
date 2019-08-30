@@ -23,9 +23,8 @@
 
 <script lang="ts">
 import { Component, Provide, Vue } from 'nuxt-property-decorator'
-import SideMenu from '~/components/SideMenu.vue'
-
 import contents from '../../../contents/json/contents.json'
+import SideMenu from '~/components/SideMenu.vue'
 
 @Component({
   components: {
@@ -46,17 +45,17 @@ class Home extends Vue {
         { hid: 'og:description', property: 'og:description', content: '@did0esのブログ' },
         { hid: 'og:type', property: 'og:type', content: 'website' },
         { hid: 'og:url', property: 'og:url', content: 'https://blog.did0es.me' },
-        { hid: 'og:title', property: 'og:title', content: 'did0es.blog' },
+        { hid: 'og:title', property: 'og:title', content: 'did0es.blog' }
       ]
     }
   }
 
-  mounted() {
+  mounted () {
     this.setFileContents()
     this.path = this.$route.path.split(/\//)[3]
   }
 
-  setFileContents() {
+  setFileContents () {
     this.fileData = Object.entries(this.files)
   }
 }

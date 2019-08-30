@@ -27,7 +27,7 @@ import FireObject02 from '~/components/FireObject02.vue'
   components: {
     SideMenu,
     FireObject01,
-    FireObject02,
+    FireObject02
   }
 })
 class Posts extends Vue {
@@ -60,7 +60,7 @@ class Posts extends Vue {
       ]
     }
   }
-  get url() {
+  get url () {
     return `https://blog.did0es.me${this.$route.path}`
   }
   handleScroll () {
@@ -72,13 +72,11 @@ class Posts extends Vue {
       this.fire = true
     }
   }
-  updateBgShow() {
-    if (this.title === 'プロメア見てきた') this.bgShow = true
-    else this.bgShow = false
+  updateBgShow () {
+    if (this.title === 'プロメア見てきた') { this.bgShow = true } else { this.bgShow = false }
   }
-  handleMouseEvent(e) {
-    if (e.offsetX > 340) this.sideMenuShow = true
-    else if (e.offsetX <= 340) this.sideMenuShow = false
+  handleMouseEvent (e) {
+    if (e.offsetX > 340) { this.sideMenuShow = true } else if (e.offsetX <= 340) { this.sideMenuShow = false }
   }
 }
 export default Posts

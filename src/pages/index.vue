@@ -16,16 +16,15 @@
                 nuxt-link(:to="`/posts/archives/${data[1].category}`").category.develop {{ data[1].category }}
               .date-wrap date
                 .date {{ data[1].created_at.split(/T/)[0] }}
-
+    
     .side-menu-wrap
       side-menu.side-menu
 </template>
 
 <script lang="ts">
 import { Component, Provide, Vue } from 'nuxt-property-decorator'
-import SideMenu from '~/components/SideMenu.vue'
-
 import contents from '../contents/json/contents.json'
+import SideMenu from '~/components/SideMenu.vue'
 
 @Component({
   components: {
@@ -39,22 +38,22 @@ class Home extends Vue {
 
   head () {
     return {
-      title: 'home',
+      title: 'did0es.blog',
       meta: [
         { hid: 'description', property: 'description', content: '@did0esのブログ' },
         { hid: 'og:description', property: 'og:description', content: '@did0esのブログ' },
         { hid: 'og:type', property: 'og:type', content: 'website' },
         { hid: 'og:url', property: 'og:url', content: 'https://blog.did0es.me' },
-        { hid: 'og:title', property: 'og:title', content: 'did0es.blog' },
+        { hid: 'og:title', property: 'og:title', content: 'did0es.blog' }
       ]
     }
   }
 
-  mounted() {
+  mounted () {
     this.setFileContents()
   }
 
-  setFileContents() {
+  setFileContents () {
     this.fileData = Object.entries(this.files)
   }
 }
@@ -86,11 +85,16 @@ a {
   position: absolute;
   width: 100vw;
   height: 10vh;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .top-bar {
   font-family: 'Chakra Petch';
   font-size: 40px;
+}
+.share-button-wrap {
+  display: flex;
 }
 .meta-wrap {
   font-family: 'Chakra Petch';
@@ -101,7 +105,7 @@ a {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-top: 6vh;
+  margin-top: 64px;
 }
 .item {
   background-color: rgb(247, 244, 245);
@@ -122,7 +126,7 @@ a {
   height: auto;
   background-color: rgba(230, 148, 163, 0.8);
   margin-bottom: 10px;
-  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.2));
 }
 .title {
   left: 0;

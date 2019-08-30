@@ -1,5 +1,5 @@
-import NuxtConfiguration from '@nuxt/config'
 import path from 'path'
+import NuxtConfiguration from '@nuxt/config'
 import contents from './src/contents/json/contents.json'
 
 const config: NuxtConfiguration = {
@@ -51,17 +51,17 @@ const config: NuxtConfiguration = {
   },
   generate: {
     fallback: true,
-    routes() {
+    routes () {
       return Object.values(contents.fileMap)
-        .map(params => {
+        .map((params) => {
           const { base, ext } = params
           return `posts/${path.basename(base, ext)}`
-      }),
+        }), // eslint-disable-line
       Object.values(contents.fileMap)
-        .map(params => {
+        .map((params) => {
           const { category } = params
           return `posts/archives/${path.basename(category)}`
-      })
+        })
     }
   }
 }

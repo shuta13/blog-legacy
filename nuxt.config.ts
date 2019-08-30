@@ -56,11 +56,6 @@ const config: NuxtConfiguration = {
         .map((params) => {
           const { base, ext } = params
           return `posts/${path.basename(base, ext)}`
-        }), // eslint-disable-line
-      Object.values(contents.fileMap)
-        .map((params) => {
-          const { category } = params
-          return `posts/archives/${path.basename(category)}`
         })
     }
   }

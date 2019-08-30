@@ -3,11 +3,11 @@
     .contents-wrap
       .menu-contents
         .share-button-wrap
-          <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="did0es.blog - blog.did0es.me @did0es" data-related="" data-lang="en" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <a href="https://twitter.com/share?url=https%3A%2F%2Fblog.did0es.me&via=did0es&text=did0es.blog%20-%20blog.did0es.me" target="_blank"><FontAwesomeIcon :icon="twitter" class="icon twitter"></FontAwesomeIcon></a>
 
-          <div class="fb-share-button" data-href="https://blog.did0es.me/" data-layout="button_count" data-size="small" data-lang="en"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog.did0es.me%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">シェア</a></div>
+          <div data-href="https://blog.did0es.me/" data-layout="button_count" data-size="small" data-lang="en"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog.did0es.me%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"><FontAwesomeIcon :icon="facebook" class="icon facebook"></FontAwesomeIcon></a></div>
 
-          <a href="https://b.hatena.ne.jp/entry/s/blog.did0es.me/" class="hatena-bookmark-button" data-hatena-bookmark-layout="basic-label" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/v4/public/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+          <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https://blog.did0es.me&title=did0es.blog%20-%20blog.did0es.me" target="_blank" rel="nofollow"><img src="~/assets/svg/hatenabookmark-logomark.svg" class="icon" style="width: 38px; height: 38px;"></a>
 
         p.category CATEGORY
 
@@ -29,10 +29,22 @@
 
 <script lang="ts">
 import { Component, Provide, Vue } from 'nuxt-property-decorator'
+import {
+  faTwitterSquare,
+  faFacebookSquare
+} from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import contents from '../contents/json/contents.json'
-@Component
+@Component({
+  components: {
+    FontAwesomeIcon
+  }
+})
 class SideMenu extends Vue {
   @Provide()
+  twitter = faTwitterSquare
+  facebook = faFacebookSquare
+
   categorys = {}
 
   numDiary = 0
@@ -65,6 +77,10 @@ a {
 a:hover {
   color: rgb(114, 63, 63);
 }
+img {
+  width: 40px;
+  height: 40px;
+}
 .side-menu {
   width: 24vw;
   height: 100vh;
@@ -90,6 +106,20 @@ a:hover {
 .share-button-wrap {
   display: flex;
   margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.icon {
+  margin: 0 8px;
+  font-size: 120%;
+  width: 42px;
+  height: 42px;
+}
+.twitter {
+  color: rgb(30, 164, 247);
+}
+.facebook {
+  color: rgb(57, 84, 153);
 }
 .category {
   font-family: 'Chakra Petch';

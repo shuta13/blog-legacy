@@ -82,15 +82,12 @@ class Posts extends Vue {
 export default Posts
 </script>
 
-<style>
+<style lang="scss" scoped>
 img {
   width: 28vw;
   min-width: 300px;
   height: auto;
 }
-</style>
-
-<style lang="scss" scoped>
 .container {
   width: 100vw;
   display: flex;

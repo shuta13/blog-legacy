@@ -1,5 +1,20 @@
 {
   "fileMap": {
+    "src/contents/json/2019-08-30-creative-coding-guilt.json": {
+      "title": "罪滅ぼし8月号",
+      "created_at": "2019-08-30T00:00:00.000Z",
+      "tags": [
+        "creative",
+        "coding",
+        "guilt"
+      ],
+      "category": "develop",
+      "dir": "src/contents/json",
+      "base": "2019-08-30-creative-coding-guilt.json",
+      "ext": ".json",
+      "sourceBase": "2019-08-30-creative-coding-guilt.md",
+      "sourceExt": ".md"
+    },
     "src/contents/json/2019-07-09-promare-movie.json": {
       "title": "プロメア見てきた",
       "created_at": "2019-07-09T00:00:00.000Z",
@@ -45,6 +60,7 @@
   "sourceFileArray": [
     "src/contents/2019-07-09-promare-movie.md",
     "src/contents/2019-08-01-about-me.md",
-    "src/contents/2019-08-12-nuxt-lazy-image.md"
+    "src/contents/2019-08-12-nuxt-lazy-image.md",
+    "src/contents/2019-08-30-creative-coding-guilt.md"
   ]
 }

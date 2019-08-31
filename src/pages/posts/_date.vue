@@ -11,7 +11,6 @@
     .contents-wrap
       .title {{ title }}
       .post-meta
-        time {{ params.date }}
       .markdown-body(v-html="bodyHtml")
     .side-menu-wrap
       side-menu.side-menu
@@ -153,7 +152,7 @@ img {
   display: flex;
   align-items: center;
   padding: 1.2vh 1.2vw;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   background-color: rgba(206, 153, 163, 0.8);
 }
 .post-meta {

@@ -2,9 +2,8 @@
 title: 罪滅ぼし8月号 ~ Creative Coding(Generative Art) 入門 ~
 created_at: 2019-08-30
 tags: 
- - creative
+ - workshop
  - coding
- - guilt
 category: develop
 ---
 

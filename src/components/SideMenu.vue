@@ -149,7 +149,7 @@ img {
   margin-right: 10px;
 }
 .number {
-  font-size: 18px;
+  font-size: 16px;
   display: flex;
   justify-content: center;
   align-items: center;

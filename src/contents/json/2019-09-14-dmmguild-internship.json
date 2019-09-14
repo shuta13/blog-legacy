@@ -6,8 +6,9 @@
     "diary"
   ],
   "category": "develop",
-  "bodyContent": "![dmm_guild_img](./images/dmm_guild.png)\n\n## これは何ですか?\n\n[合同会社DMM.com](https://dmm-corp.com/) という企業の DMM GUILD というインターンに参加してつい先日終わったので、その振り返りをしています\n\nざっくりざっくり書いていくので、丁寧な記録は以下の方々の記事を読んでください\n\n- hoge\n\n- foo",
-  "bodyHtml": "<p><img src=\"./images/dmm_guild.png\" alt=\"dmm_guild_img\"></p>\n<h2>これは何ですか?</h2>\n<p><a href=\"https://dmm-corp.com/\">合同会社DMM.com</a> という企業の DMM GUILD というインターンに参加してつい先日終わったので、その振り返りをしています</p>\n<p>ざっくりざっくり書いていくので、丁寧な記録は以下の方々の記事を読んでください</p>\n<ul>\n<li>\n<p>hoge</p>\n</li>\n<li>\n<p>foo</p>\n</li>\n</ul>\n",
+  "ogpImage": "https://blog.did0es.me/images/dmm_guild.png",
+  "bodyContent": "![dmm_guild_img](https://blog.did0es.me/images/dmm_guild.png)\n\n## これは何ですか?\n\n[合同会社DMM.com](https://dmm-corp.com/) という企業の DMM GUILD というインターンがつい先日終わったので、その振り返りをしています\n\nざっくりざっくり書いていくので、丁寧な記録は以下の方々の記事を読んでください。これは宣伝活動です\n\n- hoge\n\n- foo",
+  "bodyHtml": "<p><img src=\"https://blog.did0es.me/images/dmm_guild.png\" alt=\"dmm_guild_img\"></p>\n<h2>これは何ですか?</h2>\n<p><a href=\"https://dmm-corp.com/\">合同会社DMM.com</a> という企業の DMM GUILD というインターンがつい先日終わったので、その振り返りをしています</p>\n<p>ざっくりざっくり書いていくので、丁寧な記録は以下の方々の記事を読んでください。これは宣伝活動です</p>\n<ul>\n<li>\n<p>hoge</p>\n</li>\n<li>\n<p>foo</p>\n</li>\n</ul>\n",
   "dir": "src/contents/json",
   "base": "2019-09-14-dmmguild-internship.json",
   "ext": ".json",

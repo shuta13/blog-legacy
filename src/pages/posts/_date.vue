@@ -38,6 +38,7 @@ class Posts extends Vue {
   width = 0
   height = 0
   scrollY = 0
+  ogpImage = ''
 
   asyncData ({ params }) {
     return Object.assign({}, require(`~/contents/json/${params.date}.json`), { params })
@@ -55,8 +56,10 @@ class Posts extends Vue {
         { hid: 'description', property: 'description', content: this.title },
         { hid: 'og:description', property: 'og:description', content: this.title },
         { hid: 'og:title', property: 'og:title', content: this.title },
-        { hid: 'og:url', property: 'og:url', content: this.url }
-      ]
+        { hid: 'og:url', property: 'og:url', content: this.url },
+        { hid: 'og:image', property: 'og:image', content: this.ogpImage }
+        { name: 'twitter:card', content: 'summary_large_image' }
+      ],
     }
   }
   get url () {

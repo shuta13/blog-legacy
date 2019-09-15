@@ -1,6 +1,6 @@
 ---
 title: DMM GUILD インターン に参加しました
-created_at: 2019-09-14
+created_at: 2019-09-15
 tags: 
  - intern
  - diary

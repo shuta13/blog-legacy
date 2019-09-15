@@ -12,7 +12,7 @@ ogpImage: https://blog.did0es.me/images/dmm_guild.png
 
 ## これは何ですか?
 
-<a href="https://dmm-corp.com/" target="_blank">合同会社DMM.com</a>という企業の DMM GUILD というインターンがつい先日終わったので、その振り返りをしています
+<a href="https://dmm-corp.com/" target="_blank">合同会社DMM.com</a>の DMM GUILD というインターンがつい先日終わったので、その振り返りをしています
 
 文章が苦手なのであたたかい目で見守ってください
 <!-- ざっくりざっくり書いていくので、丁寧な記録は以下の方々の記事を読んでください。これは宣伝活動です
@@ -60,6 +60,10 @@ DMM GUILD はエンジニア職のインターンなので、持っているGitH
 
 ## こういうインターンです
 
+👇以下の画像のとおりです
+
+![about_dmm_guild](https://blog.did0es.me/images/about_dmm_guild.png)
+
 期間は2週間です。課題解決型のインターンシップです。
 
 課題解決型というと、「インターン生向けに作られた架空の設定があって...」 みたいなアレが想像できます(僕も始まるまではそれを想像してました)が、
@@ -91,7 +95,7 @@ DMM GUILD はエンジニア職のインターンなので、持っているGitH
 
 ### 出社
 
-ヤバい(朝弱い + 電車 over clouded のため)です
+ヤバい(朝弱い + 電車がovercrowded のため)です
 
 社員証を駅の改札にかざしたりオフィスのゲートにICOCAかざしたり大変だった
 

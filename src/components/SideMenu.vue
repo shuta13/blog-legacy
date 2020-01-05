@@ -2,18 +2,6 @@
   .side-menu
     .contents-wrap
       .menu-contents
-        .share-button-wrap
-          <div class="clip-icon">
-            <a href="https://twitter.com/share?url=https%3A%2F%2Fblog.did0es.me&via=did0es&text=did0esのblog" target="_blank"><FontAwesomeIcon :icon="twitter" class="icon twitter"></FontAwesomeIcon></a>
-          </div>
-
-          <div class="clip-icon">
-            <div data-href="https://blog.did0es.me/" data-layout="button_count" data-size="small" data-lang="en"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog.did0es.me%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"><FontAwesomeIcon :icon="facebook" class="icon facebook"></FontAwesomeIcon></a></div>
-          </div>
-
-          <div class="clip-icon">
-            <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https://blog.did0es.me&title=did0es.blog%20-%20blog.did0es.me" target="_blank" rel="nofollow"><img src="~/assets/svg/hatenabookmark-logomark.svg" class="icon" style="width: 38px; height: 38px;"></a>
-          </div>
         p.category CATEGORY
 
         nuxt-link(to="/posts/archives/diary").item-wrap.diary
@@ -34,22 +22,10 @@
 
 <script lang="ts">
 import { Component, Provide, Vue } from 'nuxt-property-decorator'
-import {
-  faTwitterSquare,
-  faFacebookSquare
-} from '@fortawesome/free-brands-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import contents from '../contents/json/contents.json'
-@Component({
-  components: {
-    FontAwesomeIcon
-  }
-})
+@Component({})
 class SideMenu extends Vue {
   @Provide()
-  twitter = faTwitterSquare
-  facebook = faFacebookSquare
-
   categorys = {}
 
   numDiary = 0
@@ -107,34 +83,6 @@ img {
   align-items: center;
   flex-direction: column;
   // line-height: 3rem;
-}
-.share-button-wrap {
-  display: flex;
-  margin-bottom: 10px;
-  justify-content: center;
-  align-items: center;
-}
-.icon {
-  width: 42px;
-  height: 42px;
-}
-.clip-icon {
-  margin: 0 8px;
-  width: 36px;
-  height: 36px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  border-radius: 20px;
-}
-.twitter {
-  color: rgb(25, 146, 221);
-  background: #fff;
-}
-.facebook {
-  color: rgb(57, 84, 153);
-  background: #fff;
 }
 .category {
   font-family: 'Chakra Petch';

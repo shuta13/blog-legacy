@@ -97,19 +97,6 @@ a {
   text-decoration: none;
   color: #fff;
 }
-/* .bar-wrap {
-  position: absolute;
-  width: 100vw;
-  height: 10vh;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.top-bar {
-  font-family: 'Chakra Petch';
-  font-size: 40px;
-  color: #313131;
-} */
 .share-button-wrap {
   @media screen and (min-width: 769px) {
     display: none;

@@ -5,6 +5,7 @@
       .title {{ title }}
       .post-meta
       .markdown-body(v-html="bodyHtml")
+      <share-button :title="title" :url="url" />
     .side-menu-wrap
       side-menu.side-menu
 </template>
@@ -13,11 +14,13 @@
 import { Component, Provide, Vue } from 'nuxt-property-decorator'
 import SideMenu from '~/components/SideMenu.vue'
 import AppTitle from '~/components/AppTitle.vue'
+import ShareButton from '~/components/ShareButton.vue'
 
 @Component({
   components: {
     SideMenu,
-    AppTitle
+    AppTitle,
+    ShareButton
   }
 })
 class Posts extends Vue {

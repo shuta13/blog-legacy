@@ -1,7 +1,6 @@
 <template lang="pug">
   .container
-    .bar-wrap
-      .top-bar did0es.blog
+    app-title
     
       .share-button-wrap
         <a href="https://twitter.com/share?url=https%3A%2F%2Fblog.did0es.me&via=did0es&text=did0esのblog" target="_blank"><FontAwesomeIcon :icon="twitter" class="icon twitter"></FontAwesomeIcon></a>
@@ -36,11 +35,13 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import contents from '../contents/json/contents.json'
 import SideMenu from '~/components/SideMenu.vue'
+import AppTitle from '~/components/AppTitle.vue'
 
 @Component({
   components: {
     FontAwesomeIcon,
-    SideMenu
+    SideMenu,
+    AppTitle
   }
 })
 class Home extends Vue {
@@ -95,9 +96,9 @@ html body {
 }
 a {
   text-decoration: none;
-  color: rgba(80, 40, 40, 1);
+  color: #fff;
 }
-.bar-wrap {
+/* .bar-wrap {
   position: absolute;
   width: 100vw;
   height: 10vh;
@@ -108,7 +109,8 @@ a {
 .top-bar {
   font-family: 'Chakra Petch';
   font-size: 40px;
-}
+  color: #313131;
+} */
 .share-button-wrap {
   @media screen and (min-width: 769px) {
     display: none;
@@ -160,7 +162,7 @@ a {
 .title-wrap {
   width: 100%;
   height: auto;
-  background-color: rgba(230, 148, 163, 0.8);
+  background-color: #455870;
   margin-bottom: 10px;
   filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.2));
 }
@@ -189,7 +191,7 @@ a {
   margin-bottom: 2px;
   margin-left: 8px;
   border-radius: 4px;
-  border: solid 1px rgba(0, 0, 0, .6);
+  border: solid 1px #313131;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -197,6 +199,7 @@ a {
   width: 64px;
   height: auto;
   padding: 2px 2px;
+  color: #313131;
 }
 .date {
   width: 90px;

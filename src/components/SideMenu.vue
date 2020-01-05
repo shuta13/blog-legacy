@@ -3,12 +3,17 @@
     .contents-wrap
       .menu-contents
         .share-button-wrap
-          <a href="https://twitter.com/share?url=https%3A%2F%2Fblog.did0es.me&via=did0es&text=did0esのblog" target="_blank"><FontAwesomeIcon :icon="twitter" class="icon twitter"></FontAwesomeIcon></a>
+          <div class="clip-icon">
+            <a href="https://twitter.com/share?url=https%3A%2F%2Fblog.did0es.me&via=did0es&text=did0esのblog" target="_blank"><FontAwesomeIcon :icon="twitter" class="icon twitter"></FontAwesomeIcon></a>
+          </div>
 
-          <div data-href="https://blog.did0es.me/" data-layout="button_count" data-size="small" data-lang="en"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog.did0es.me%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"><FontAwesomeIcon :icon="facebook" class="icon facebook"></FontAwesomeIcon></a></div>
+          <div class="clip-icon">
+            <div data-href="https://blog.did0es.me/" data-layout="button_count" data-size="small" data-lang="en"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog.did0es.me%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"><FontAwesomeIcon :icon="facebook" class="icon facebook"></FontAwesomeIcon></a></div>
+          </div>
 
-          <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https://blog.did0es.me&title=did0es.blog%20-%20blog.did0es.me" target="_blank" rel="nofollow"><img src="~/assets/svg/hatenabookmark-logomark.svg" class="icon" style="width: 38px; height: 38px;"></a>
-
+          <div class="clip-icon">
+            <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https://blog.did0es.me&title=did0es.blog%20-%20blog.did0es.me" target="_blank" rel="nofollow"><img src="~/assets/svg/hatenabookmark-logomark.svg" class="icon" style="width: 38px; height: 38px;"></a>
+          </div>
         p.category CATEGORY
 
         nuxt-link(to="/posts/archives/diary").item-wrap.diary
@@ -72,7 +77,7 @@ export default SideMenu
 <style lang="scss" scoped>
 a {
   text-decoration: none;
-  color: rgba(80, 40, 40, 1);
+  color: #fff;
 }
 a:hover {
   color: rgb(114, 63, 63);
@@ -84,7 +89,7 @@ img {
 .side-menu {
   width: 24vw;
   height: 100vh;
-  background-color: rgba(206, 153, 163, 0.8);
+  background-color: #455870;
   display: flex;
 }
 .contents-wrap {
@@ -110,16 +115,26 @@ img {
   align-items: center;
 }
 .icon {
-  margin: 0 8px;
-  font-size: 120%;
   width: 42px;
   height: 42px;
 }
+.clip-icon {
+  margin: 0 8px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+}
 .twitter {
   color: rgb(25, 146, 221);
+  background: #fff;
 }
 .facebook {
   color: rgb(57, 84, 153);
+  background: #fff;
 }
 .category {
   font-family: 'Chakra Petch';
@@ -155,16 +170,16 @@ img {
   align-items: center;
   width: 20px;
   height: 20px;
-  border: solid 1px rgba(0, 0, 0, .4);
+  border: solid 1px #fff;
   border-radius: 10px;
 }
 .other {
-  background-color: rgba(220, 220, 220, 1);
+  background-color: rgb(196, 151, 151);
 }
 .develop {
-  background-color: rgba(180, 220, 180, 1);
+  background-color: rgb(127, 189, 127);
 }
 .diary {
-  background-color: rgb(169, 183, 212);
+  background-color: rgb(120, 141, 184);
 }
 </style>

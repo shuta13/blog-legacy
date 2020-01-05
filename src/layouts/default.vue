@@ -18,7 +18,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-  color: rgba(80, 40, 40, 1);
+  color: #fff;
 }
 
 *,
@@ -29,16 +29,12 @@ html {
 }
 
 .markdown-body {
-  color: rgba(80, 40, 40, 1);
+  color: rgb(49, 49, 49);
 }
 
 .markdown-body a {
-  color: rgb(120, 40, 40);
+  color: rgb(136, 136, 136);
   transition: color .2s;
-}
-
-.markdown-body a:hover {
-  color: rgb(209, 168, 175);
 }
 
 .markdown-body pre {

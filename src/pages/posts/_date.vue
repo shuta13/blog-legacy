@@ -1,13 +1,6 @@
 <template lang="pug">
   .container(@mouseover="handleMouseEvent")
-    .bg(v-if="!bgShow")
-    .bg-objects(v-if="bgShow")
-      transition(name="fire1")
-        //- 平めの方
-        fire-object01(v-if="!fire")
-      transition(name="fire2")
-        //- 出っ張ってる方
-        fire-object02(v-if="fire")
+    app-title
     .contents-wrap
       .title {{ title }}
       .post-meta
@@ -19,14 +12,12 @@
 <script lang="ts">
 import { Component, Provide, Vue } from 'nuxt-property-decorator'
 import SideMenu from '~/components/SideMenu.vue'
-import FireObject01 from '~/components/FireObject01.vue'
-import FireObject02 from '~/components/FireObject02.vue'
+import AppTitle from '~/components/AppTitle.vue'
 
 @Component({
   components: {
     SideMenu,
-    FireObject01,
-    FireObject02
+    AppTitle
   }
 })
 class Posts extends Vue {
@@ -131,6 +122,7 @@ img {
     font-size: 0.8rem;
     width: 80vw;
   }
+  margin: 48px 0;
   padding-top: 2vh;
   padding-left: 2vw;
   padding-right: 2vw;
@@ -156,7 +148,7 @@ img {
   align-items: center;
   padding: 1.2vh 1.2vw;
   font-size: 1.4rem;
-  background-color: rgba(206, 153, 163, 0.8);
+  background-color: #455870;
 }
 .post-meta {
   @media screen and (max-width: 768px) {

@@ -81,7 +81,7 @@ html body {
 }
 a {
   text-decoration: none;
-  color: rgba(80, 40, 40, 1);
+  color: #fff;
 }
 .bar-wrap {
   position: absolute;

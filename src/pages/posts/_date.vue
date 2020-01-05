@@ -50,7 +50,7 @@ class Posts extends Vue {
         { hid: 'og:url', property: 'og:url', content: this.url },
         { hid: 'og:image', property: 'og:image', content: this.ogpImage },
         { name: 'twitter:card', content: 'summary_large_image' }
-      ],
+      ]
     }
   }
   get url () {

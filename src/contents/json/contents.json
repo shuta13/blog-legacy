@@ -1,5 +1,19 @@
 {
   "fileMap": {
+    "src/contents/json/2019-08-30-creative-coding-guilt.json": {
+      "title": "罪滅ぼし8月号",
+      "created_at": "2019-08-30T00:00:00.000Z",
+      "tags": [
+        "workshop",
+        "coding"
+      ],
+      "category": "develop",
+      "dir": "src/contents/json",
+      "base": "2019-08-30-creative-coding-guilt.json",
+      "ext": ".json",
+      "sourceBase": "2019-08-30-creative-coding-guilt.md",
+      "sourceExt": ".md"
+    },
     "src/contents/json/2019-08-01-about-me.json": {
       "title": "About Me",
       "created_at": "2019-08-01T00:00:00.000Z",
@@ -12,20 +26,6 @@
       "base": "2019-08-01-about-me.json",
       "ext": ".json",
       "sourceBase": "2019-08-01-about-me.md",
-      "sourceExt": ".md"
-    },
-    "src/contents/json/2019-08-30-creative-coding-guilt.json": {
-      "title": "罪滅ぼし8月号 ~ Creative Coding(Generative Art) 入門 ~",
-      "created_at": "2019-08-30T00:00:00.000Z",
-      "tags": [
-        "workshop",
-        "coding"
-      ],
-      "category": "develop",
-      "dir": "src/contents/json",
-      "base": "2019-08-30-creative-coding-guilt.json",
-      "ext": ".json",
-      "sourceBase": "2019-08-30-creative-coding-guilt.md",
       "sourceExt": ".md"
     },
     "src/contents/json/2019-09-15-dmmguild-internship.json": {
@@ -42,25 +42,10 @@
       "ext": ".json",
       "sourceBase": "2019-09-15-dmmguild-internship.md",
       "sourceExt": ".md"
-    },
-    "src/contents/json/2019-08-12-nuxt-lazy-image.json": {
-      "title": "Nuxt + v-lazy-imageで楽に画像遅延読み込み",
-      "created_at": "2019-08-12T00:00:00.000Z",
-      "tags": [
-        "vue/nuxt",
-        "plugin"
-      ],
-      "category": "develop",
-      "dir": "src/contents/json",
-      "base": "2019-08-12-nuxt-lazy-image.json",
-      "ext": ".json",
-      "sourceBase": "2019-08-12-nuxt-lazy-image.md",
-      "sourceExt": ".md"
     }
   },
   "sourceFileArray": [
     "src/contents/2019-08-01-about-me.md",
-    "src/contents/2019-08-12-nuxt-lazy-image.md",
     "src/contents/2019-08-30-creative-coding-guilt.md",
     "src/contents/2019-09-15-dmmguild-internship.md"
   ]

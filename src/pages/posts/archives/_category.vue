@@ -1,10 +1,9 @@
 <template lang="pug">
   .container
-    .bar-wrap
-      .top-bar # {{ path }}
+    app-title
 
     .item-wrap
-      div(v-for="data in fileData" :key="data" v-if="path===data[1].category")
+      div(v-for="data in fileData" :key="data[1].title" v-if="path===data[1].category")
         nuxt-link(:to="`/posts/${data[1].base.split(/.json/)[0]}`")
           .item
             .title-wrap
@@ -25,10 +24,12 @@
 import { Component, Provide, Vue } from 'nuxt-property-decorator'
 import contents from '../../../contents/json/contents.json'
 import SideMenu from '~/components/SideMenu.vue'
+import AppTitle from '~/components/AppTitle.vue'
 
 @Component({
   components: {
-    SideMenu
+    SideMenu,
+    AppTitle
   }
 })
 class Home extends Vue {
@@ -121,7 +122,7 @@ a {
 .title-wrap {
   width: 100%;
   height: auto;
-  background-color: rgba(230, 148, 163, 0.8);
+  background-color: #455870;
   margin-bottom: 10px;
   filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.2));
 }
@@ -158,6 +159,7 @@ a {
   width: 64px;
   height: auto;
   padding: 2px 2px;
+  color: #313131;
 }
 .date {
   width: 90px;

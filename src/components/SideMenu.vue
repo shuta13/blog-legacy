@@ -55,9 +55,6 @@ a {
   text-decoration: none;
   color: #fff;
 }
-a:hover {
-  color: rgb(114, 63, 63);
-}
 img {
   width: 40px;
   height: 40px;

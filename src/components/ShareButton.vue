@@ -2,7 +2,7 @@
   <div class="share-button-wrap">
     <div class="clip-icon">
       <a
-        :href="'https://twitter.com/share?url=https%3A%2F%2F'+url+'&via=did0es&text='+title"
+        :href="'https://twitter.com/share?url='+url+'&via=did0es&text='+title"
         target="_blank"
       >
         <FontAwesomeIcon :icon="twitter" class="icon twitter" />
@@ -17,7 +17,7 @@
       >
         <a
           target="_blank"
-          :href="'https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2F'+url+'%2F&amp;src=sdkpreparse'"
+          :href="'https://www.facebook.com/sharer/sharer.php?u='+url+'%2F&amp;src=sdkpreparse'"
           class="fb-xfbml-parse-ignore">
           <FontAwesomeIcon :icon="facebook" class="icon facebook" />
         </a>
@@ -25,7 +25,7 @@
     </div>
     <div class="clip-icon">
       <a
-        :href="'http://b.hatena.ne.jp/add?mode=confirm&url=https://'+url+'&title='+title"
+        :href="'http://b.hatena.ne.jp/add?mode=confirm&url='+url+'&title='+title"
         target="_blank"
         rel="nofollow"
       >

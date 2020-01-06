@@ -126,10 +126,7 @@ a {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  @media screen and (max-width: 768px) {
-    margin-top: 80px;
-  }
-  margin-top: 64px;
+  margin-top: 36px;
 }
 .item {
   background-color: rgb(247, 244, 245);

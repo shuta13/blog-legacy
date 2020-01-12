@@ -98,6 +98,7 @@ a {
   font-family: 'Chakra Petch';
   display: flex;
   justify-content: center;
+  color: #313131;
 }
 .item-wrap {
   display: flex;
@@ -147,18 +148,15 @@ a {
 .tags, .category, .date {
   font-size: 100%;
   font-family: 'Cutive Mono';
-  margin-top: 2px;
-  margin-bottom: 2px;
-  margin-left: 8px;
+  margin: 4px 2px;
+  padding: 2px 2px;
   border-radius: 4px;
   border: solid 1px rgba(0, 0, 0, .6);
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 64px;
   height: auto;
-  padding: 2px 2px;
   color: #313131;
 }
 .date {

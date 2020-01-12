@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@nuxt/typescript": "2.8.1",
-    "@nuxtjs/eslint-config": "1.0.1",
+    "@nuxtjs/eslint-config": "1.1.2",
     "@nuxtjs/eslint-module": "0.0.1",
     "@types/gsap": "1.20.2",
     "@types/node": "12.6.2",

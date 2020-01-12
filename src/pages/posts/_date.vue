@@ -150,7 +150,7 @@ img {
   display: flex;
   align-items: center;
   padding: 1.2vh 1.2vw;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   background-color: #455870;
 }
 .post-meta {

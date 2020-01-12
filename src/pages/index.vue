@@ -121,6 +121,7 @@ a {
   font-family: 'Chakra Petch';
   display: flex;
   justify-content: center;
+  color: #313131;
 }
 .item-wrap {
   display: flex;
@@ -170,22 +171,17 @@ a {
 .tags, .category, .date {
   font-size: 100%;
   font-family: 'Cutive Mono';
-  margin-top: 2px;
-  margin-bottom: 2px;
-  margin-left: 8px;
+  margin: 4px 2px;
+  padding: 2px 2px;
   border-radius: 4px;
   border: solid 1px #313131;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 64px;
+  /* width: 64px; */
   height: auto;
-  padding: 2px 2px;
   color: #313131;
-}
-.date {
-  width: 90px;
 }
 .side-menu-wrap {
   @media screen and (max-width: 768px) {
@@ -202,7 +198,7 @@ a {
 }
 .side-menu {
   @media screen and (max-width: 768px) {
-    display: none; // スマホ用メニュー出来たら外す
+    display: none;
   }
 }
 </style>

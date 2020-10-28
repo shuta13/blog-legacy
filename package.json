@@ -26,7 +26,7 @@
     "highlight.js": "9.15.9",
     "nuxt": "2.8.1",
     "nuxt-fontawesome": "0.4.0",
-    "nuxt-property-decorator": "2.3.0",
+    "nuxt-property-decorator": "2.8.8",
     "three": "0.106.2",
     "ts-node": "8.3.0"
   },

@@ -49,7 +49,7 @@
     "eslint-plugin-vue": "5.2.3",
     "node-sass": "4.12.0",
     "nodemon": "1.19.1",
-    "processmd": "4.4.2",
+    "processmd": "4.5.3",
     "pug": "2.0.4",
     "pug-plain-loader": "1.0.0",
     "sass-loader": "7.1.0"

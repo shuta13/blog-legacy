@@ -27,7 +27,7 @@
     "nuxt": "2.8.1",
     "nuxt-fontawesome": "0.4.0",
     "nuxt-property-decorator": "2.3.0",
-    "three": "0.106.2",
+    "three": "0.121.1",
     "ts-node": "8.3.0"
   },
   "devDependencies": {
